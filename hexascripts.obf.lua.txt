@@ -1,0 +1,907 @@
+-- Protected by Luaveil (sentrix)
+local _lvWrap = function() local _lv0000=loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\115\105\114\105\117\115\046\109\101\110\117\047\114\097\121\102\105\101\108\100"))()
+_lv0000:LoadConfiguration()
+local _lv0001=game:GetService("\080\108\097\121\101\114\115")
+local _lv0002=_lv0001.LocalPlayer
+local _lv0003=_lv0000:CreateWindow({
+Name="\104\101\120\097\032\104\117\098",
+Icon="\114\101\119\105\110\100",
+LoadingTitle="\108\111\097\100\105\110\103\032\109\111\100\117\108\101\115\032\124\032\099\111\109\112\108\101\116\101\033\032\101\110\106\111\121\032\116\104\101\032\103\097\109\101",
+LoadingSubtitle="\109\097\100\101\032\098\121\032\104\101\120\097\104\117\098\115\099\114\105\112\116\115",
+ShowText="\082\097\121\102\105\101\108\100",
+Theme="\065\109\098\101\114\071\108\111\119",
+ToggleUIKeybind="\075",
+DisableRayfieldPrompts=false,
+DisableBuildWarnings=false,
+ConfigurationSaving={
+Enabled=true,
+FolderName=nil,
+FileName="\107\110\052\103\104\116\114\105\118\097\108\115\046\108\111\108"
+}
+})
+
+
+
+local function _lv0004(_lv004F)
+if not _lv004F or _lv004F==_lv0002 then
+return true
+end
+
+if _lv0002.Team and _lv004F.Team then
+if _lv0002.Team==_lv004F.Team then
+return true
+end
+end
+
+local _lv0005=_lv0002:GetAttribute("\084\101\097\109\073\068")
+local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")
+if _lv0005~=nil and _lv0006~=nil then
+if tostring(_lv0005)==tostring(_lv0006)then
+return true
+end
+end
+
+local _lv0007=_lv0002:GetAttribute("\084\101\097\109")
+local _lv0008=_lv004F:GetAttribute("\084\101\097\109")
+if _lv0007~=nil and _lv0008~=nil then
+if tostring(_lv0007)==tostring(_lv0008)then
+return true
+end
+end
+return false
+end
+local _lv0009=_lv0003:CreateTab("\077\097\105\110",4483362458)
+local _lv000A=_lv0003:CreateTab("\068\101\118\105\099\101\032\083\112\111\111\102\101\114","\114\101\119\105\110\100")
+
+
+
+_lv000A:CreateDropdown({
+Name="\083\101\108\101\099\116\032\067\111\110\116\114\111\108\032\084\121\112\101",
+Options={"\077\111\098\105\108\101","\080\067","\067\111\110\116\114\111\108\108\101\114","\086\082"},
+CurrentOption={"\080\067"},
+Callback=function(option)
+local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local _lv000C=_lv000B:FindFirstChild("\082\101\109\111\116\101\115")and _lv000B.Remotes:FindFirstChild("\082\101\112\108\105\099\097\116\105\111\110")and _lv000B.Remotes.Replication:FindFirstChild("\070\105\103\104\116\101\114")and _lv000B.Remotes.Replication.Fighter:FindFirstChild("\083\101\116\067\111\110\116\114\111\108\115")
+if not _lv000C then
+_lv0000:Notify({
+Title="\069\114\114\111\114",
+Content="\067\111\117\108\100\032\110\111\116\032\102\105\110\100\032\083\101\116\067\111\110\116\114\111\108\115\032\114\101\109\111\116\101\033",
+Duration=3
+})
+return
+end
+local _lv000D={
+Mobile="\084\111\117\099\104",
+PC="\077\111\117\115\101\075\101\121\098\111\097\114\100",
+Controller="\071\097\109\101\112\097\100",
+VR="\086\082"
+}
+_lv000C:FireServer(_lv000D[option[1]])
+_lv0000:Notify({
+Title="\067\111\110\116\114\111\108\115\032\067\104\097\110\103\101\100",
+Content="\083\119\105\116\099\104\101\100\032\116\111\032"..option[1],
+Duration=3
+})
+end
+})
+local _lv000E=_lv000A:CreateSection("\116\104\105\115\032\099\097\110\032\099\104\097\110\103\101\032\121\111\117\114\032\100\101\118\105\099\101")
+_lv0000:Notify({
+Title="\107\110\052\103\104\116\046\108\111\108",
+Content="\104\101\108\108\111\032\121\111\117\032\101\110\106\111\121\032\116\104\101\032\115\099\114\105\112\116\063",
+Duration=6.5,
+Image=4483362458,
+})
+_lv0000:Notify({
+Title="\104\101\120\097\046\108\111\108\032\040\097\108\116\032\098\111\116\041",
+Content="\116\104\097\110\107\032\121\111\117\032\102\111\114\032\101\120\101\099\117\116\105\110\103\032\116\104\105\115\032\115\099\114\105\112\116\033",
+Duration=6.5,
+Image="\114\101\119\105\110\100",
+})
+
+_lv0009:CreateButton({
+Name="\101\120\101\099\117\116\101\032\114\097\103\101\098\111\116\032\040\115\104\111\111\116\032\105\116\032\119\105\108\108\032\104\105\116\032\116\104\101\032\112\108\097\121\101\114\041",
+Callback=function()
+loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\107\110\052\103\104\116\045\115\101\099\117\114\105\116\121\047\082\097\103\101\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\114\097\103\101\046\108\117\097\046\116\120\116"))()
+end,
+})
+
+_lv0009:CreateButton({
+Name="\102\097\115\116\032\109\101\108\101\101",
+Callback=function()
+print("\067\108\105\099\107\101\100\033")
+loadstring([[
+--!native
+--!optimize 2
+
+if game.GameId == 6035872082 then
+    local Storage = game:GetService("ReplicatedStorage")
+    local Items = require(Storage.Modules.ItemLibrary).Items
+
+    -- ====================== FAST MELEE ONLY ======================
+    -- No gun modifications, only melee
+    
+    local meleeExceptions = {
+        ["Sniper"] = true,  -- Skip guns
+        ["Crossbow"] = true,
+        ["Bow"] = true,
+        ["RPG"] = true,
+        ["Pistol"] = true,
+        ["Shotgun"] = true,
+        ["Rifle"] = true,
+        ["SMG"] = true,
+        ["AR"] = true,
+        ["Launcher"] = true,
+    }
+
+    for name, data in pairs(Items) do
+        if typeof(data) == "table" then
+            -- Only modify melee weapons (check for melee properties)
+            local isMelee = data.AttackCooldown or data.SwingCooldown or data.MeleeCooldown or data.Cooldown
+            
+            -- Skip if it's a gun
+            local isGun = data.ShootSpread or data.ShootAccuracy or data.ShootRecoil or data.ShootCooldown
+            
+            if isMelee and not isGun then
+                -- Fast melee cooldowns
+                if data.AttackCooldown then data.AttackCooldown = 0.001 end
+                if data.SwingCooldown then data.SwingCooldown = 0.001 end
+                if data.MeleeCooldown then data.MeleeCooldown = 0.001 end
+                if data.Cooldown then data.Cooldown = 0.001 end
+                if data.RecoveryTime then data.RecoveryTime = 0.001 end
+                if data.ResetTime then data.ResetTime = 0.001 end
+                if data.SwingTime then data.SwingTime = 0.05 end
+                if data.HitboxDuration then data.HitboxDuration = 0.05 end
+            end
+        end
+    end
+
+    print("Fast Melee Only - Loaded! (Guns unchanged)")
+    print("Made by flapparoblox and wrathscripts, enjoy :)")
+end
+]])()
+end,
+})
+
+_lv0009:CreateButton({
+Name="\102\097\115\116\032\102\105\114\105\110\103",
+Callback=function()
+print("\067\108\105\099\107\101\100\033")
+loadstring([[
+--!native
+--!optimize 2
+
+if game.GameId == 6035872082 then
+    local Storage = game:GetService("ReplicatedStorage")
+    local Items = require(Storage.Modules.ItemLibrary).Items
+
+    -- ====================== FAST FIRE (Guns) ======================
+    local gunExceptions = {
+        ["Sniper"] = false,
+        ["Crossbow"] = false,
+        ["Bow"] = false,
+        ["RPG"] = false,
+    }
+
+    for name, data in pairs(Items) do
+        if typeof(data) == "table" and not gunExceptions[name] then
+            if data.ShootSpread then data.ShootSpread = 0 end
+            if data.ShootAccuracy then data.ShootAccuracy = 0 end
+            if data.ShootRecoil then data.ShootRecoil = 0 end
+            if data.ShootCooldown then data.ShootCooldown = 0.001 end
+            if data.ShootBurstCooldown then data.ShootBurstCooldown = 0.001 end
+        end
+    end
+
+    -- ====================== FAST MELEE ======================
+    for name, data in pairs(Items) do
+        if typeof(data) == "table" then
+            -- Common melee cooldown properties in Rivals
+            if data.AttackCooldown then data.AttackCooldown = 0.001 end
+            if data.SwingCooldown then data.SwingCooldown = 0.001 end
+            if data.MeleeCooldown then data.MeleeCooldown = 0.001 end
+            if data.Cooldown then data.Cooldown = 0.001 end
+            if data.RecoveryTime then data.RecoveryTime = 0.001 end
+            if data.ResetTime then data.ResetTime = 0.001 end
+        end
+    end
+
+    print("made by kn4ghtbypasser enjoy")
+end
+]])()
+end,
+})
+
+_lv0009:CreateButton({
+Name="\115\107\105\110\032\099\104\097\110\103\101\114\032\086\051",
+Callback=function()
+print("\067\108\105\099\107\101\100\033")
+loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\115\117\112\112\111\114\116\101\114\108\111\099\107\045\115\111\117\114\099\101\047\083\107\105\110\045\099\104\097\110\103\101\114\045\086\051\045\066\069\084\065\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\115\107\105\110\037\050\048\099\104\097\110\103\101\114\037\050\048\086\051\037\050\048\040\066\069\084\065\041\046\108\117\097"))()
+end,
+})
+
+_lv0009:CreateButton({
+Name="\115\105\108\101\110\116\032\097\105\109\032\118\050\040\070\073\088\069\068\041",
+Callback=function()
+print("\099\108\105\099\107\101\100\033")
+local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local _lv000F=require(_lv000B.Modules.Utility)
+local _lv0010=game:GetService("\080\108\097\121\101\114\115")
+local _lv0011=game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101")
+local _lv0012=_lv0010.LocalPlayer
+local _lv0013=_lv000F.Raycast
+
+local _lv0014=150
+local _lv0015=5
+local _lv0016=45
+
+local function _lv0017()
+return _lv0011.TouchEnabled and not _lv0011.KeyboardEnabled and not _lv0011.MouseEnabled
+end
+
+local function _lv0018()
+if _lv0017()then
+return 35
+end
+return _lv0016
+end
+
+local function _lv0004(_lv004F)
+if not _lv004F or _lv004F==_lv0012 then
+return true
+end
+if _lv0012.Team and _lv004F.Team and _lv0012.Team==_lv004F.Team then
+return true
+end
+local _lv0005=_lv0012:GetAttribute("\084\101\097\109\073\068")or _lv0012:GetAttribute("\084\101\097\109")
+local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")or _lv004F:GetAttribute("\084\101\097\109")
+if _lv0005~=nil and _lv0006~=nil then
+return tostring(_lv0005)==tostring(_lv0006)
+end
+return false
+end
+
+local function _lv0019(_lv002A,targetPart)
+local _lv001A=_lv0012.Character
+if not _lv001A or not targetPart then
+return false
+end
+local _lv001B=_lv001A:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then
+return false
+end
+local _lv001C=targetPart.Position-_lv001B.Position
+if _lv001C.Magnitude<=0 then
+return false
+end
+local _lv001D=RaycastParams.new()
+_lv001D.FilterType=Enum.RaycastFilterType.Exclude
+_lv001D.FilterDescendantsInstances={
+_lv001A
+}
+_lv001D.IgnoreWater=true
+local _lv001E=_lv0031:Raycast(
+_lv001B.Position,
+_lv001C,
+_lv001D
+)
+if not _lv001E then
+return true
+end
+return _lv001E.Instance:IsDescendantOf(_lv002A)
+end
+
+local function _lv001F(targetPosition)
+local _lv0020=_lv0031.CurrentCamera
+if not _lv0020 then return false end
+
+local _lv0021=(targetPosition-_lv0020.CFrame.Position).Unit
+
+local _lv0022=_lv0020.CFrame.LookVector
+
+local _lv0023=math.acos(math.clamp(_lv0022:Dot(_lv0021),-1,1))
+local _lv0024=math.deg(_lv0023)
+return _lv0024<=_lv0018()
+end
+
+local function _lv0025()
+local _lv0026=_lv0012.Character
+if not _lv0026 then
+return nil
+end
+local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then
+return nil
+end
+local _lv0027=nil
+local _lv0028=_lv0014+1
+local _lv0029=_lv0018()
+for _,p in ipairs(_lv0010:GetPlayers())do
+if p~=_lv0012 and p.Character and not _lv0004(p)then
+local _lv002A=p.Character
+local _lv002B=_lv002A:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+local _lv002C=_lv002A:FindFirstChild("\072\101\097\100")
+local _lv002D=_lv002A:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
+if _lv002B and _lv002C and _lv002D and _lv002D.Health>0 then
+local _lv002E=
+(_lv001B.Position-_lv002B.Position).Magnitude
+
+if _lv001F(_lv002C.Position)then
+if _lv002E>_lv0015
+and _lv002E<_lv0028
+and _lv0019(_lv002A,_lv002C)then
+_lv0028=_lv002E
+_lv0027=p
+end
+end
+end
+end
+end
+return _lv0027
+end
+
+_lv000F.Raycast=function(
+self,
+_lv003B,
+endPos,
+maxDist,
+_lv003E,
+filterType,
+debugMode
+)
+local _lv002F=_lv0025()
+if not _lv002F
+or not _lv002F.Character
+or not _lv002F.Character:FindFirstChild("\072\101\097\100")then
+return _lv0013(
+self,
+_lv003B,
+endPos,
+maxDist,
+_lv003E,
+filterType,
+debugMode
+)
+end
+local _lv002C=_lv002F.Character.Head
+local _lv0030=_lv002C.Position
+local _lv001C=_lv0030-_lv003B
+local _lv002E=_lv001C.Magnitude
+if _lv002E>_lv0014 or _lv002E<=0 then
+return _lv0013(
+self,
+_lv003B,
+endPos,
+maxDist,
+_lv003E,
+filterType,
+debugMode
+)
+end
+_lv001C=_lv001C.Unit
+if maxDist and _lv002E>maxDist then
+_lv002E=maxDist
+_lv0030=_lv003B+_lv001C*maxDist
+end
+return{
+Position=_lv0030,
+Distance=_lv002E,
+Instance=_lv002C,
+Material=_lv002C.Material,
+Normal=-_lv001C
+}
+end
+end,
+})
+
+_lv0009:CreateButton({
+Name="\115\105\108\101\110\116\032\097\105\109\032\086\051\040\085\080\068\065\084\069\068\041",
+Callback=function()
+print("\067\108\105\099\107\101\100\033")
+local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local _lv000F=require(_lv000B.Modules.Utility)
+local _lv0010=game:GetService("\080\108\097\121\101\114\115")
+local _lv0031=game:GetService("\087\111\114\107\115\112\097\099\101")
+local _lv0012=_lv0010.LocalPlayer
+local _lv0013=_lv000F.Raycast
+local _lv0032=nil
+local _lv0033=0
+local _lv0034=0.1
+local _lv0014=150
+local _lv0015=5
+
+local _lv0016=60
+local _lv0035=_lv0016/2
+
+local function _lv0004(_lv004F)
+if not _lv004F or _lv004F==_lv0012 then
+return true
+end
+if _lv0012.Team and _lv004F.Team then
+if _lv0012.Team==_lv004F.Team then
+return true
+end
+end
+local _lv0005=_lv0012:GetAttribute("\084\101\097\109\073\068")or _lv0012:GetAttribute("\084\101\097\109")
+local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")or _lv004F:GetAttribute("\084\101\097\109")
+if _lv0005~=nil and _lv0006~=nil then
+if tostring(_lv0005)==tostring(_lv0006)then
+return true
+end
+end
+return false
+end
+
+local function _lv001F(_lv003B,lookDirection,targetPos)
+if not _lv003B or not lookDirection or not targetPos then
+return false
+end
+local _lv0036=(targetPos-_lv003B).Unit
+local _lv0037=lookDirection:Dot(_lv0036)
+local _lv0023=math.deg(math.acos(_lv0037))
+return _lv0023<=_lv0035
+end
+local function _lv0025()
+local _lv0038=tick()
+if _lv0032 and(_lv0038-_lv0033)<_lv0034 then
+if _lv0032.Character and _lv0032.Character:FindFirstChild("\072\117\109\097\110\111\105\100")and _lv0032.Character.Humanoid.Health>0 and not _lv0004(_lv0032)then
+local _lv0026=_lv0012.Character
+if _lv0026 then
+local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if _lv001B then
+local _lv002B=_lv0032.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if _lv002B then
+local _lv0039=(_lv001B.Position-_lv002B.Position).Magnitude
+if _lv0039>_lv0015 and _lv0039<_lv0014 then
+return _lv0032
+end
+end
+end
+end
+_lv0032=nil
+else
+_lv0032=nil
+end
+end
+local _lv0026=_lv0012.Character
+if not _lv0026 then
+_lv0032=nil
+return nil
+end
+local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then
+_lv0032=nil
+return nil
+end
+
+local _lv0020=_lv0031.CurrentCamera
+if not _lv0020 then
+_lv0032=nil
+return nil
+end
+local _lv003A=_lv0020.CFrame.LookVector
+local _lv003B=_lv001B.Position
+local _lv0027=nil
+local _lv0028=_lv0014+1
+for _,p in ipairs(_lv0010:GetPlayers())do
+if p~=_lv0012 and p.Character then
+local _lv002B=p.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+local _lv002D=p.Character:FindFirstChild("\072\117\109\097\110\111\105\100")
+
+if _lv002B and _lv002D and _lv002D.Health>0 and not _lv0004(p)then
+local _lv0039=(_lv001B.Position-_lv002B.Position).Magnitude
+if _lv0039>_lv0015 and _lv0039<_lv0028 then
+
+if _lv001F(_lv003B,_lv003A,_lv002B.Position)then
+_lv0028=_lv0039
+_lv0027=p
+end
+end
+end
+end
+end
+_lv0032=_lv0027
+_lv0033=_lv0038
+return _lv0027
+end
+local function _lv003C(_lv003B,targetPos,targetCharacter)
+if not _lv003B or not targetPos or not targetCharacter then
+return false
+end
+local _lv003D=(targetPos-_lv003B).Magnitude
+if _lv003D<2 then
+return true
+end
+if _lv003D>_lv0014 then
+return false
+end
+local _lv001D=RaycastParams.new()
+_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
+local _lv003E={_lv0012.Character,targetCharacter}
+_lv001D.FilterDescendantsInstances=_lv003E
+_lv001D.IgnoreWater=true
+local _lv001C=(targetPos-_lv003B).Unit
+local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv003D,_lv001D)
+if not _lv001E then
+return true
+end
+local _lv003F=_lv001E.Instance
+if _lv003F then
+local _lv0040=_lv003F.Parent
+if _lv003F==targetCharacter or _lv003F:IsDescendantOf(targetCharacter)then
+return true
+end
+if _lv0040 and(_lv0040==targetCharacter or _lv0040:IsDescendantOf(targetCharacter))then
+return true
+end
+end
+return false
+end
+_lv000F.Raycast=function(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+if not _lv003B then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv002F=_lv0025()
+if not _lv002F or not _lv002F.Character then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv0041=_lv002F.Character
+if not _lv0041 or not _lv0041.Parent then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv0042=_lv0041:FindFirstChild("\072\101\097\100")
+local _lv0043=_lv0041:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv0042 or not _lv0043 then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv0044=_lv0042.Position
+local _lv0045=_lv0043.Position
+local _lv0046=(_lv0044-_lv003B).Magnitude
+if _lv0046>_lv0014 then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+
+local _lv0020=_lv0031.CurrentCamera
+if _lv0020 then
+local _lv003A=_lv0020.CFrame.LookVector
+if not _lv001F(_lv003B,_lv003A,_lv0044)then
+
+if not _lv001F(_lv003B,_lv003A,_lv0045)then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+end
+end
+local _lv0047=math.min(maxDist or 1000,_lv0014)
+if _lv0046>_lv0047 then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv0048=_lv0044
+local _lv0049=_lv003C(_lv003B,_lv0048,_lv0041)
+if not _lv0049 then
+_lv0049=_lv003C(_lv003B,_lv0045,_lv0041)
+if _lv0049 then
+_lv0048=_lv0045
+end
+end
+if not _lv0049 then
+return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+end
+local _lv004A=(_lv0048-_lv003B).Unit
+local _lv003D=(_lv0048-_lv003B).Magnitude
+if _lv003D>_lv0047 then
+_lv003D=_lv0047
+_lv0048=_lv003B+_lv004A*_lv0047
+end
+return{
+Position=_lv0048,
+Distance=_lv003D,
+Instance=_lv0042,
+Material=_lv0042.Material,
+Normal=-_lv004A
+}
+end
+_lv0012.CharacterAdded:Connect(function()
+_lv0032=nil
+_lv0033=0
+end)
+_lv0010.PlayerRemoving:Connect(function()
+_lv0032=nil
+_lv0033=0
+end)
+end,
+})
+
+_lv0009:CreateButton({
+Name="\110\111\032\115\112\114\101\097\100",
+Callback=function()
+print("\067\108\105\099\107\101\100\033")
+
+local _lv004B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
+local _lv004C=require(_lv004B.Modules.ItemLibrary)
+local function _lv004D(tbl)
+for _,v in pairs(tbl)do
+if typeof(v)=="\116\097\098\108\101"then
+if v.ShootSpread then
+v.ShootSpread=0
+end
+if v.ShootAccuracy then
+v.ShootAccuracy=0
+end
+if v.ShootRecoil then
+v.ShootRecoil=0
+end
+_lv004D(v)
+end
+end
+end
+_lv004D(_lv004C)
+print("✅\032\070\097\115\116\032\070\105\114\105\110\103\032\045\032\078\111\032\082\101\099\111\105\108\047\083\112\114\101\097\100\032\076\111\097\100\101\100\033")
+end,
+})
+local _lv004E=_lv0009:CreateButton({
+Name="\069\110\097\098\108\101\032\097\105\109\098\111\116",
+Callback=function()
+
+local _lv004F=game:GetService("\080\108\097\121\101\114\115").LocalPlayer
+
+repeat task.wait()until _lv004F and _lv004F.Character
+local _lv0050=_lv004F.PlayerScripts:WaitForChild("\067\111\110\116\114\111\108\108\101\114\115",math.huge)
+local _lv0051=require(_lv0050:WaitForChild("\067\097\109\101\114\097\067\111\110\116\114\111\108\108\101\114",math.huge))
+
+local _lv0014=150
+local _lv0015=5
+local _lv0034=0.15
+
+local _lv0032=nil
+local _lv0033=0
+
+local function _lv0052(_lv002F)
+if _lv002F==_lv004F then return false end
+local _lv0026=_lv002F.Character
+if not _lv0026 then return false end
+local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
+if not _lv0053 or _lv0053.Health<=0 then return false end
+local _lv0005=_lv004F.Team or _lv004F:GetAttribute("\084\101\097\109")or _lv004F:GetAttribute("\084\101\097\109\073\068")
+local _lv0054=_lv002F.Team or _lv002F:GetAttribute("\084\101\097\109")or _lv002F:GetAttribute("\084\101\097\109\073\068")
+if _lv0005 and _lv0054 then
+return _lv0005~=_lv0054
+end
+return true
+end
+
+local function _lv003C(targetCharacter,targetPart)
+local _lv0020=_lv0031.CurrentCamera
+if not _lv0020 or not targetPart then return false end
+local _lv003B=_lv0020.CFrame.Position
+local _lv001C=(targetPart.Position-_lv003B).Unit
+local _lv002E=(targetPart.Position-_lv003B).Magnitude
+if _lv002E<1 then return true end
+local _lv003E={
+_lv004F.Character,
+targetCharacter,
+}
+local _lv001D=RaycastParams.new()
+_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
+_lv001D.FilterDescendantsInstances=_lv003E
+_lv001D.IgnoreWater=true
+local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv002E,_lv001D)
+if not _lv001E then return true end
+local _lv003F=_lv001E.Instance
+if _lv003F==targetPart or _lv003F:IsDescendantOf(targetCharacter)then
+return true
+end
+return false
+end
+
+local function _lv0055(_lv002F)
+if not _lv002F then return false end
+local _lv0026=_lv002F.Character
+if not _lv0026 then return false end
+local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
+if not _lv0053 or _lv0053.Health<=0 then return false end
+if not _lv0052(_lv002F)then return false end
+local _lv002C=_lv0026:FindFirstChild("\072\101\097\100")
+if not _lv002C then return false end
+local _lv001B=_lv004F.Character and _lv004F.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then return false end
+local _lv003D=(_lv001B.Position-_lv002C.Position).Magnitude
+if _lv003D>_lv0014 or _lv003D<_lv0015 then return false end
+if not _lv003C(_lv0026,_lv002C)then return false end
+return true
+end
+
+local function _lv0056()
+local _lv0038=tick()
+
+if _lv0032 and(_lv0038-_lv0033)<_lv0034 then
+if _lv0055(_lv0032)then
+return _lv0032
+else
+_lv0032=nil
+end
+end
+
+local _lv0026=_lv004F.Character
+if not _lv0026 then return nil end
+local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then return nil end
+local _lv0027,_lv0028=nil,_lv0014+1
+for _,plr in ipairs(game:GetService("\080\108\097\121\101\114\115"):GetPlayers())do
+if _lv0052(plr)then
+local _lv0057=plr.Character
+if _lv0057 then
+local _lv0058=_lv0057:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+local _lv002C=_lv0057:FindFirstChild("\072\101\097\100")
+if _lv0058 and _lv002C then
+local _lv003D=(_lv001B.Position-_lv0058.Position).Magnitude
+if _lv003D<_lv0028 and _lv003D>_lv0015 and _lv003C(_lv0057,_lv002C)then
+_lv0028=_lv003D
+_lv0027=plr
+end
+end
+end
+end
+end
+
+_lv0032=_lv0027
+_lv0033=_lv0038
+return _lv0027
+end
+
+game:GetService("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function()
+local _lv002F=_lv0056()
+if _lv002F and _lv002F.Character then
+local _lv002C=_lv002F.Character:FindFirstChild("\072\101\097\100")
+if _lv002C then
+local _lv0020=_lv0031.CurrentCamera
+if _lv0020 then
+
+local _lv0059=CFrame.lookAt(_lv0020.CFrame.Position,_lv002C.Position)
+local _lv005A=_lv0059-_lv0059.Position
+_lv0051:MimicRotation(_lv005A)
+end
+end
+end
+end)
+
+_lv004F.CharacterAdded:Connect(function()
+_lv0032=nil
+_lv0033=0
+end)
+game:GetService("\080\108\097\121\101\114\115").PlayerRemoving:Connect(function()
+_lv0032=nil
+_lv0033=0
+end)
+
+game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101").InputBegan:Connect(function(input,gp)
+if gp then return end
+if input.KeyCode==Enum.KeyCode.T then
+print("\084\101\115\116\105\110\103\032\105\110\115\116\097\110\116\032\115\110\097\112")
+_lv0051:MimicRotation(CFrame.Angles(0,math.rad(45),0))
+end
+end)
+print("🚀\032\073\110\115\116\097\110\116\032\097\105\109\098\111\116\032\119\105\116\104\032\099\097\099\104\105\110\103\032\108\111\097\100\101\100\033\032\040\067\097\099\104\101\058\032".._lv0034.."\115\041")
+end,
+})
+local _lv004E=_lv0009:CreateButton({
+Name="\069\110\097\098\108\101\032\097\105\109\098\111\116\032\048\046\051\032\115\109\111\111\116\104\105\110\103",
+Callback=function()
+
+local _lv004F=game:GetService("\080\108\097\121\101\114\115").LocalPlayer
+
+repeat task.wait()until _lv004F and _lv004F.Character
+local _lv0050=_lv004F.PlayerScripts:WaitForChild("\067\111\110\116\114\111\108\108\101\114\115",math.huge)
+local _lv0051=require(_lv0050:WaitForChild("\067\097\109\101\114\097\067\111\110\116\114\111\108\108\101\114",math.huge))
+
+local _lv0014=150
+local _lv0015=5
+local _lv005B=0.3
+
+local function _lv0052(_lv002F)
+if _lv002F==_lv004F then return false end
+local _lv0026=_lv002F.Character
+if not _lv0026 then return false end
+local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
+if not _lv0053 or _lv0053.Health<=0 then return false end
+local _lv0005=_lv004F.Team or _lv004F:GetAttribute("\084\101\097\109")or _lv004F:GetAttribute("\084\101\097\109\073\068")
+local _lv0054=_lv002F.Team or _lv002F:GetAttribute("\084\101\097\109")or _lv002F:GetAttribute("\084\101\097\109\073\068")
+if _lv0005 and _lv0054 then
+return _lv0005~=_lv0054
+end
+return true
+end
+
+local function _lv003C(targetCharacter,targetPart)
+local _lv0020=_lv0031.CurrentCamera
+if not _lv0020 or not targetPart then return false end
+local _lv003B=_lv0020.CFrame.Position
+local _lv001C=(targetPart.Position-_lv003B).Unit
+local _lv002E=(targetPart.Position-_lv003B).Magnitude
+
+if _lv002E<1 then return true end
+
+local _lv003E={
+_lv004F.Character,
+targetCharacter,
+}
+local _lv001D=RaycastParams.new()
+_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
+_lv001D.FilterDescendantsInstances=_lv003E
+_lv001D.IgnoreWater=true
+local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv002E,_lv001D)
+
+if not _lv001E then return true end
+
+local _lv003F=_lv001E.Instance
+if _lv003F==targetPart or _lv003F:IsDescendantOf(targetCharacter)then
+return true
+end
+
+return false
+end
+
+local function _lv0056()
+local _lv0026=_lv004F.Character
+if not _lv0026 then return nil end
+local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+if not _lv001B then return nil end
+local _lv0027,_lv0028=nil,_lv0014+1
+for _,plr in ipairs(game:GetService("\080\108\097\121\101\114\115"):GetPlayers())do
+if _lv0052(plr)then
+local _lv0057=plr.Character
+if _lv0057 then
+local _lv0058=_lv0057:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
+local _lv002C=_lv0057:FindFirstChild("\072\101\097\100")
+if _lv0058 and _lv002C then
+local _lv003D=(_lv001B.Position-_lv0058.Position).Magnitude
+
+if _lv003D<_lv0028 and _lv003D>_lv0015 and _lv003C(_lv0057,_lv002C)then
+_lv0028=_lv003D
+_lv0027=plr
+end
+end
+end
+end
+end
+return _lv0027
+end
+
+game:GetService("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function()
+local _lv002F=_lv0056()
+if _lv002F and _lv002F.Character then
+local _lv002C=_lv002F.Character:FindFirstChild("\072\101\097\100")
+if _lv002C then
+local _lv0020=_lv0031.CurrentCamera
+if _lv0020 then
+local _lv0059=CFrame.lookAt(_lv0020.CFrame.Position,_lv002C.Position)
+local _lv005A=_lv0059-_lv0059.Position
+if _lv005B>0 then
+local _lv005C=_lv0020.CFrame-_lv0020.CFrame.Position
+local _lv005D=_lv005C:Lerp(_lv005A,1-_lv005B)
+_lv0051:MimicRotation(_lv005D)
+else
+_lv0051:MimicRotation(_lv005A)
+end
+end
+end
+end
+end)
+
+game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101").InputBegan:Connect(function(input,gp)
+if gp then return end
+if input.KeyCode==Enum.KeyCode.T then
+print("\084\101\115\116\105\110\103\032\077\105\109\105\099\082\111\116\097\116\105\111\110")
+_lv0051:MimicRotation(CFrame.Angles(0,math.rad(45),0))
+end
+end)
+print("🚀\032\065\105\109\098\111\116\032\119\105\116\104\032\118\105\115\105\098\105\108\105\116\121\032\099\104\101\099\107\032\108\111\097\100\101\100\033")
+end,
+})
+local _lv004E=_lv0009:CreateButton({
+Name="\097\115\116\101\114\111\105\100\032\104\117\098\032\040\098\097\099\107\117\112\041",
+Callback=function()
+loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\107\110\052\103\104\116\045\115\101\099\117\114\105\116\121\047\072\101\120\097\104\117\098\115\099\114\105\112\116\115\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\097\115\116\101\114\111\105\100\046\108\117\097\046\116\120\116"))()
+end,
+})
+print("\107\110\052\103\104\116\032\104\117\098\032\108\111\097\100\101\100\033")
+print("\107\110\052\103\104\116\032\104\117\098\032\108\111\097\100\101\100\033") end
+_lvWrap()
