@@ -1,114 +1,114 @@
 -- Protected by Luaveil (sentrix)
-local _lvWrap = function() local _lv0000=loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\115\105\114\105\117\115\046\109\101\110\117\047\114\097\121\102\105\101\108\100"))()
-_lv0000:LoadConfiguration()
-local _lv0001=game:GetService("\080\108\097\121\101\114\115")
-local _lv0002=_lv0001.LocalPlayer
-local _lv0003=_lv0000:CreateWindow({
-Name="\104\101\120\097\032\104\117\098",
-Icon="\114\101\119\105\110\100",
-LoadingTitle="\108\111\097\100\105\110\103\032\109\111\100\117\108\101\115\032\124\032\099\111\109\112\108\101\116\101\033\032\101\110\106\111\121\032\116\104\101\032\103\097\109\101",
-LoadingSubtitle="\109\097\100\101\032\098\121\032\104\101\120\097\104\117\098\115\099\114\105\112\116\115",
-ShowText="\082\097\121\102\105\101\108\100",
-Theme="\065\109\098\101\114\071\108\111\119",
-ToggleUIKeybind="\075",
+local _lvWrap = function() local IIIIII=function(s,k)local IIIIIl={}for i=1,#s do IIIIIl[i]=string.char((s:byte(i)-k)%(260-4))end return table.concat(IIIIIl)end local IIIIIO={IIIIII("\xD9\xE5\xE5\xE1\xE4\xAB\xA0\xA0\xE4\xDA\xE3\xDA\xE6\xE4\x9F\xDE\xD6\xDF\xE6\xA0\xE3\xD2\xEA\xD7\xDA\xD6\xDD\xD5",(114-1)),IIIIII("\xC1\xDD\xD2\xEA\xD6\xE3\xE4",(123-10)),IIIIII("\xD9\xD6\xE9\xD2\x91\xD9\xE6\xD3",(97+16)),IIIIII("\xE3\xD6\xE8\xDA\xDF\xD5",(120-7)),IIIIII("\xDD\xE0\xD2\xD5\xDA\xDF\xD8\x91\xDE\xE0\xD5\xE6\xDD\xD6\xE4\x91\xED\x91\xD4\xE0\xDE\xE1\xDD\xD6\xE5\xD6\x92\x91\xD6\xDF\xDB\xE0\xEA\x91\xE5\xD9\xD6\x91\xD8\xD2\xDE\xD6",(119-6)),IIIIII("\xDE\xD2\xD5\xD6\x91\xD3\xEA\x91\xD9\xD6\xE9\xD2\xD9\xE6\xD3\xE4\xD4\xE3\xDA\xE1\xE5\xE4",(22+91)),IIIIII("\xC3\xD2\xEA\xD7\xDA\xD6\xDD\xD5",(119-6)),IIIIII("\xB2\xDE\xD3\xD6\xE3\xB8\xDD\xE0\xE8",(89+24)),IIIIII("\xBC",(123-10)),IIIIII("\xDC\xDF\xA5\xD8\xD9\xE5\xE3\xDA\xE7\xD2\xDD\xE4\x9F\xDD\xE0\xDD",(22+91)),IIIIII("\xC5\xD6\xD2\xDE\xBA\xB5",(94+19)),IIIIII("\xC5\xD6\xD2\xDE",(55+58)),IIIIII("\xBE\xD2\xDA\xDF",(18+95)),IIIIII("\xB5\xD6\xE7\xDA\xD4\xD6\x91\xC4\xE1\xE0\xE0\xD7\xD6\xE3",(120-7)),IIIIII("\xC4\xD6\xDD\xD6\xD4\xE5\x91\xB4\xE0\xDF\xE5\xE3\xE0\xDD\x91\xC5\xEA\xE1\xD6",(122-9)),IIIIII("\xBE\xE0\xD3\xDA\xDD\xD6",(122-9)),IIIIII("\xC1\xB4",(119-6)),IIIIII("\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xDD\xD6\xE3",(118-5)),IIIIII("\xC7\xC3",(107+6)),IIIIII("\xC3\xD6\xE1\xDD\xDA\xD4\xD2\xE5\xD6\xD5\xC4\xE5\xE0\xE3\xD2\xD8\xD6",(116-3)),IIIIII("\xC3\xD6\xDE\xE0\xE5\xD6\xE4",(119-6)),IIIIII("\xC3\xD6\xE1\xDD\xDA\xD4\xD2\xE5\xDA\xE0\xDF",(119-6)),IIIIII("\xB7\xDA\xD8\xD9\xE5\xD6\xE3",(44+69)),IIIIII("\xC4\xD6\xE5\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xE4",(120-7)),IIIIII("\xB6\xE3\xE3\xE0\xE3",(121-8)),IIIIII("\xB4\xE0\xE6\xDD\xD5\x91\xDF\xE0\xE5\x91\xD7\xDA\xDF\xD5\x91\xC4\xD6\xE5\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xE4\x91\xE3\xD6\xDE\xE0\xE5\xD6\x92",(72+41)),IIIIII("\xC5\xE0\xE6\xD4\xD9",(122-9)),IIIIII("\xBE\xE0\xE6\xE4\xD6\xBC\xD6\xEA\xD3\xE0\xD2\xE3\xD5",(101+12)),IIIIII("\xB8\xD2\xDE\xD6\xE1\xD2\xD5",(109+4)),IIIIII("\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xE4\x91\xB4\xD9\xD2\xDF\xD8\xD6\xD5",(6+107)),IIIIII("\xC4\xE8\xDA\xE5\xD4\xD9\xD6\xD5\x91\xE5\xE0\x91",(114-1)),IIIIII("\xE5\xD9\xDA\xE4\x91\xD4\xD2\xDF\x91\xD4\xD9\xD2\xDF\xD8\xD6\x91\xEA\xE0\xE6\xE3\x91\xD5\xD6\xE7\xDA\xD4\xD6",(114-1)),IIIIII("\xDC\xDF\xA5\xD8\xD9\xE5\x9F\xDD\xE0\xDD",(122-9)),IIIIII("\xD9\xD6\xDD\xDD\xE0\x91\xEA\xE0\xE6\x91\xD6\xDF\xDB\xE0\xEA\x91\xE5\xD9\xD6\x91\xE4\xD4\xE3\xDA\xE1\xE5\xB0",(117-4)),IIIIII("\xD9\xD6\xE9\xD2\x9F\xDD\xE0\xDD\x91\x99\xD2\xDD\xE5\x91\xD3\xE0\xE5\x9A",(118-5)),IIIIII("\xE5\xD9\xD2\xDF\xDC\x91\xEA\xE0\xE6\x91\xD7\xE0\xE3\x91\xD6\xE9\xD6\xD4\xE6\xE5\xDA\xDF\xD8\x91\xE5\xD9\xDA\xE4\x91\xE4\xD4\xE3\xDA\xE1\xE5\x92",(120-7)),IIIIII("\xD6\xE9\xD6\xD4\xE6\xE5\xD6\x91\xE3\xD2\xD8\xD6\xD3\xE0\xE5\x91\x99\xE4\xD9\xE0\xE0\xE5\x91\xDA\xE5\x91\xE8\xDA\xDD\xDD\x91\xD9\xDA\xE5\x91\xE5\xD9\xD6\x91\xE1\xDD\xD2\xEA\xD6\xE3\x9A",(110+3)),IIIIII("\xD9\xE5\xE5\xE1\xE4\xAB\xA0\xA0\xE3\xD2\xE8\x9F\xD8\xDA\xE5\xD9\xE6\xD3\xE6\xE4\xD6\xE3\xD4\xE0\xDF\xE5\xD6\xDF\xE5\x9F\xD4\xE0\xDE\xA0\xDC\xDF\xA5\xD8\xD9\xE5\x9E\xE4\xD6\xD4\xE6\xE3\xDA\xE5\xEA\xA0\xC3\xD2\xD8\xD6\xA0\xE3\xD6\xD7\xE4\xA0\xD9\xD6\xD2\xD5\xE4\xA0\xDE\xD2\xDA\xDF\xA0\xE3\xD2\xD8\xD6\x9F\xDD\xE6\xD2\x9F\xE5\xE9\xE5",(36+77)),IIIIII("\xD7\xD2\xE4\xE5\x91\xDE\xD6\xDD\xD6\xD6",(9+104)),IIIIII("\xB4\xDD\xDA\xD4\xDC\xD6\xD5\x92",(62+51)),IIIIII("\xD7\xD2\xE4\xE5\x91\xD7\xDA\xE3\xDA\xDF\xD8",(25+88)),IIIIII("\xE4\xDC\xDA\xDF\x91\xD4\xD9\xD2\xDF\xD8\xD6\xE3\x91\xC7\xA4",(119-6)),IIIIII("\xD9\xE5\xE5\xE1\xE4\xAB\xA0\xA0\xE3\xD2\xE8\x9F\xD8\xDA\xE5\xD9\xE6\xD3\xE6\xE4\xD6\xE3\xD4\xE0\xDF\xE5\xD6\xDF\xE5\x9F\xD4\xE0\xDE\xA0\xE4\xE6\xE1\xE1\xE0\xE3\xE5\xD6\xE3\xDD\xE0\xD4\xDC\x9E\xE4\xE0\xE6\xE3\xD4\xD6\xA0\xC4\xDC\xDA\xDF\x9E\xD4\xD9\xD2\xDF\xD8\xD6\xE3\x9E\xC7\xA4\x9E\xB3\xB6\xC5\xB2\xA0\xE3\xD6\xD7\xE4\xA0\xD9\xD6\xD2\xD5\xE4\xA0\xDE\xD2\xDA\xDF\xA0\xE4\xDC\xDA\xDF\x96\xA3\xA1\xD4\xD9\xD2\xDF\xD8\xD6\xE3\x96\xA3\xA1\xC7\xA4\x96\xA3\xA1\x99\xB3\xB6\xC5\xB2\x9A\x9F\xDD\xE6\xD2",(118-5)),IIIIII("\xE4\xDA\xDD\xD6\xDF\xE5\x91\xD2\xDA\xDE\x91\xE7\xA3\x99\xB7\xBA\xC9\xB6\xB5\x9A",(115-2)),IIIIII("\xD4\xDD\xDA\xD4\xDC\xD6\xD5\x92",(115-2)),IIIIII("\xC6\xE4\xD6\xE3\xBA\xDF\xE1\xE6\xE5\xC4\xD6\xE3\xE7\xDA\xD4\xD6",(33+80)),IIIIII("\xB9\xE6\xDE\xD2\xDF\xE0\xDA\xD5\xC3\xE0\xE0\xE5\xC1\xD2\xE3\xE5",(67+46)),IIIIII("\xB9\xD6\xD2\xD5",(30+83)),IIIIII("\xB9\xE6\xDE\xD2\xDF\xE0\xDA\xD5",(36+77)),IIIIII("\xE4\xDA\xDD\xD6\xDF\xE5\x91\xD2\xDA\xDE\x91\xC7\xA4\x99\xC6\xC1\xB5\xB2\xC5\xB6\xB5\x9A",(118-5)),IIIIII("\xC8\xE0\xE3\xDC\xE4\xE1\xD2\xD4\xD6",(63+50)),IIIIII("\xDF\xE0\x91\xE4\xE1\xE3\xD6\xD2\xD5",(111+2)),IIIIII("\xE5\xD2\xD3\xDD\xD6",(122-9)),IIIIII("\x53\x0D\xF6\x91\xB7\xD2\xE4\xE5\x91\xB7\xDA\xE3\xDA\xDF\xD8\x91\x9E\x91\xBF\xE0\x91\xC3\xD6\xD4\xE0\xDA\xDD\xA0\xC4\xE1\xE3\xD6\xD2\xD5\x91\xBD\xE0\xD2\xD5\xD6\xD5\x92",(120-7)),IIIIII("\xB6\xDF\xD2\xD3\xDD\xD6\x91\xD2\xDA\xDE\xD3\xE0\xE5",(121-8)),IIIIII("\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xDD\xD6\xE3\xE4",(121-8)),IIIIII("\xB4\xD2\xDE\xD6\xE3\xD2\xB4\xE0\xDF\xE5\xE3\xE0\xDD\xDD\xD6\xE3",(85+28)),IIIIII("\xC3\xE6\xDF\xC4\xD6\xE3\xE7\xDA\xD4\xD6",(115-2)),IIIIII("\xC5\xD6\xE4\xE5\xDA\xDF\xD8\x91\xDA\xDF\xE4\xE5\xD2\xDF\xE5\x91\xE4\xDF\xD2\xE1",(114-1)),IIIIII("\x61\x10\x0B\xF1\x91\xBA\xDF\xE4\xE5\xD2\xDF\xE5\x91\xD2\xDA\xDE\xD3\xE0\xE5\x91\xE8\xDA\xE5\xD9\x91\xD4\xD2\xD4\xD9\xDA\xDF\xD8\x91\xDD\xE0\xD2\xD5\xD6\xD5\x92\x91\x99\xB4\xD2\xD4\xD9\xD6\xAB\x91",(60+53)),IIIIII("\xE4\x9A",(43+70)),IIIIII("\xB6\xDF\xD2\xD3\xDD\xD6\x91\xD2\xDA\xDE\xD3\xE0\xE5\x91\xA1\x9F\xA4\x91\xE4\xDE\xE0\xE0\xE5\xD9\xDA\xDF\xD8",(92+21)),IIIIII("\xC5\xD6\xE4\xE5\xDA\xDF\xD8\x91\xBE\xDA\xDE\xDA\xD4\xC3\xE0\xE5\xD2\xE5\xDA\xE0\xDF",(118-5)),IIIIII("\x61\x10\x0B\xF1\x91\xB2\xDA\xDE\xD3\xE0\xE5\x91\xE8\xDA\xE5\xD9\x91\xE7\xDA\xE4\xDA\xD3\xDA\xDD\xDA\xE5\xEA\x91\xD4\xD9\xD6\xD4\xDC\x91\xDD\xE0\xD2\xD5\xD6\xD5\x92",(120-7)),IIIIII("\xD2\xE4\xE5\xD6\xE3\xE0\xDA\xD5\x91\xD9\xE6\xD3\x91\x99\xD3\xD2\xD4\xDC\xE6\xE1\x9A",(115-2)),IIIIII("\xD9\xE5\xE5\xE1\xE4\xAB\xA0\xA0\xE3\xD2\xE8\x9F\xD8\xDA\xE5\xD9\xE6\xD3\xE6\xE4\xD6\xE3\xD4\xE0\xDF\xE5\xD6\xDF\xE5\x9F\xD4\xE0\xDE\xA0\xDC\xDF\xA5\xD8\xD9\xE5\x9E\xE4\xD6\xD4\xE6\xE3\xDA\xE5\xEA\xA0\xB9\xD6\xE9\xD2\xD9\xE6\xD3\xE4\xD4\xE3\xDA\xE1\xE5\xE4\xA0\xE3\xD6\xD7\xE4\xA0\xD9\xD6\xD2\xD5\xE4\xA0\xDE\xD2\xDA\xDF\xA0\xD2\xE4\xE5\xD6\xE3\xE0\xDA\xD5\x9F\xDD\xE6\xD2\x9F\xE5\xE9\xE5",(118-5)),IIIIII("\xDC\xDF\xA5\xD8\xD9\xE5\x91\xD9\xE6\xD3\x91\xDD\xE0\xD2\xD5\xD6\xD5\x92",(54+59))}local IIIIlI=loadstring(game:HttpGet(IIIIIO[1]))()
+IIIIlI:LoadConfiguration()
+local IIIIll=game:GetService(IIIIIO[(12-10)])
+local IIIIlO=IIIIll.LocalPlayer
+local IIIIOI=IIIIlI:CreateWindow({
+Name=IIIIIO[(1+2)],
+Icon=IIIIIO[(5-1)],
+LoadingTitle=IIIIIO[(1+4)],
+LoadingSubtitle=IIIIIO[(13-7)],
+ShowText=IIIIIO[(2+5)],
+Theme=IIIIIO[(7+1)],
+ToggleUIKeybind=IIIIIO[(12-3)],
 DisableRayfieldPrompts=false,
 DisableBuildWarnings=false,
 ConfigurationSaving={
 Enabled=true,
 FolderName=nil,
-FileName="\107\110\052\103\104\116\114\105\118\097\108\115\046\108\111\108"
+FileName=IIIIIO[(15-5)]
 }
 })
 
 
 
-local function _lv0004(_lv004F)
-if not _lv004F or _lv004F==_lv0002 then
+local function IIIIOl(IIlIOl)
+if not IIlIOl or IIlIOl==IIIIlO then
 return true
 end
 
-if _lv0002.Team and _lv004F.Team then
-if _lv0002.Team==_lv004F.Team then
-return true
-end
-end
-
-local _lv0005=_lv0002:GetAttribute("\084\101\097\109\073\068")
-local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")
-if _lv0005~=nil and _lv0006~=nil then
-if tostring(_lv0005)==tostring(_lv0006)then
+if IIIIlO.Team and IIlIOl.Team then
+if IIIIlO.Team==IIlIOl.Team then
 return true
 end
 end
 
-local _lv0007=_lv0002:GetAttribute("\084\101\097\109")
-local _lv0008=_lv004F:GetAttribute("\084\101\097\109")
-if _lv0007~=nil and _lv0008~=nil then
-if tostring(_lv0007)==tostring(_lv0008)then
+local IIIIOO=IIIIlO:GetAttribute(IIIIIO[(7+4)])
+local IIII0I=IIlIOl:GetAttribute(IIIIIO[(19-8)])
+if IIIIOO~=nil and IIII0I~=nil then
+if tostring(IIIIOO)==tostring(IIII0I)then
+return true
+end
+end
+
+local IIII0l=IIIIlO:GetAttribute(IIIIIO[(4+8)])
+local IIII0O=IIlIOl:GetAttribute(IIIIIO[(21-9)])
+if IIII0l~=nil and IIII0O~=nil then
+if tostring(IIII0l)==tostring(IIII0O)then
 return true
 end
 end
 return false
 end
-local _lv0009=_lv0003:CreateTab("\077\097\105\110",4483362458)
-local _lv000A=_lv0003:CreateTab("\068\101\118\105\099\101\032\083\112\111\111\102\101\114","\114\101\119\105\110\100")
+local IIII1I=IIIIOI:CreateTab(IIIIIO[(11+2)],(94355961+4389006497))
+local IIII1l=IIIIOI:CreateTab(IIIIIO[(10+4)],IIIIIO[(14-10)])
 
 
 
-_lv000A:CreateDropdown({
-Name="\083\101\108\101\099\116\032\067\111\110\116\114\111\108\032\084\121\112\101",
-Options={"\077\111\098\105\108\101","\080\067","\067\111\110\116\114\111\108\108\101\114","\086\082"},
-CurrentOption={"\080\067"},
+IIII1l:CreateDropdown({
+Name=IIIIIO[(7+8)],
+Options={IIIIIO[(14+2)],IIIIIO[(22-5)],IIIIIO[(25-7)],IIIIIO[(20-1)]},
+CurrentOption={IIIIIO[(20-3)]},
 Callback=function(option)
-local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
-local _lv000C=_lv000B:FindFirstChild("\082\101\109\111\116\101\115")and _lv000B.Remotes:FindFirstChild("\082\101\112\108\105\099\097\116\105\111\110")and _lv000B.Remotes.Replication:FindFirstChild("\070\105\103\104\116\101\114")and _lv000B.Remotes.Replication.Fighter:FindFirstChild("\083\101\116\067\111\110\116\114\111\108\115")
-if not _lv000C then
-_lv0000:Notify({
-Title="\069\114\114\111\114",
-Content="\067\111\117\108\100\032\110\111\116\032\102\105\110\100\032\083\101\116\067\111\110\116\114\111\108\115\032\114\101\109\111\116\101\033",
-Duration=3
+local IIII1O=game:GetService(IIIIIO[(16+4)])
+local IIIlII=IIII1O:FindFirstChild(IIIIIO[(1+20)])and IIII1O.Remotes:FindFirstChild(IIIIIO[(2+20)])and IIII1O.Remotes.Replication:FindFirstChild(IIIIIO[(4+19)])and IIII1O.Remotes.Replication.Fighter:FindFirstChild(IIIIIO[(7+17)])
+if not IIIlII then
+IIIIlI:Notify({
+Title=IIIIIO[(21+4)],
+Content=IIIIIO[(27-1)],
+Duration=(1+2)
 })
 return
 end
-local _lv000D={
-Mobile="\084\111\117\099\104",
-PC="\077\111\117\115\101\075\101\121\098\111\097\114\100",
-Controller="\071\097\109\101\112\097\100",
-VR="\086\082"
+local IIIlIl={
+Mobile=IIIIIO[(16+11)],
+PC=IIIIIO[(31-3)],
+Controller=IIIIIO[(32-3)],
+VR=IIIIIO[(9+10)]
 }
-_lv000C:FireServer(_lv000D[option[1]])
-_lv0000:Notify({
-Title="\067\111\110\116\114\111\108\115\032\067\104\097\110\103\101\100",
-Content="\083\119\105\116\099\104\101\100\032\116\111\032"..option[1],
-Duration=3
+IIIlII:FireServer(IIIlIl[option[1]])
+IIIIlI:Notify({
+Title=IIIIIO[(1+29)],
+Content=IIIIIO[(10+21)]..option[1],
+Duration=(2+1)
 })
 end
 })
-local _lv000E=_lv000A:CreateSection("\116\104\105\115\032\099\097\110\032\099\104\097\110\103\101\032\121\111\117\114\032\100\101\118\105\099\101")
-_lv0000:Notify({
-Title="\107\110\052\103\104\116\046\108\111\108",
-Content="\104\101\108\108\111\032\121\111\117\032\101\110\106\111\121\032\116\104\101\032\115\099\114\105\112\116\063",
+local IIIlIO=IIII1l:CreateSection(IIIIIO[(36-4)])
+IIIIlI:Notify({
+Title=IIIIIO[(26+7)],
+Content=IIIIIO[(41-7)],
 Duration=6.5,
-Image=4483362458,
+Image=(4483362460-2),
 })
-_lv0000:Notify({
-Title="\104\101\120\097\046\108\111\108\032\040\097\108\116\032\098\111\116\041",
-Content="\116\104\097\110\107\032\121\111\117\032\102\111\114\032\101\120\101\099\117\116\105\110\103\032\116\104\105\115\032\115\099\114\105\112\116\033",
+IIIIlI:Notify({
+Title=IIIIIO[(39-4)],
+Content=IIIIIO[(9+27)],
 Duration=6.5,
-Image="\114\101\119\105\110\100",
+Image=IIIIIO[(1+3)],
 })
 
-_lv0009:CreateButton({
-Name="\101\120\101\099\117\116\101\032\114\097\103\101\098\111\116\032\040\115\104\111\111\116\032\105\116\032\119\105\108\108\032\104\105\116\032\116\104\101\032\112\108\097\121\101\114\041",
+IIII1I:CreateButton({
+Name=IIIIIO[(40-3)],
 Callback=function()
-loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\107\110\052\103\104\116\045\115\101\099\117\114\105\116\121\047\082\097\103\101\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\114\097\103\101\046\108\117\097\046\116\120\116"))()
+loadstring(game:HttpGet(IIIIIO[(39-1)]))()
 end,
 })
 
-_lv0009:CreateButton({
-Name="\102\097\115\116\032\109\101\108\101\101",
+IIII1I:CreateButton({
+Name=IIIIIO[(46-7)],
 Callback=function()
-print("\067\108\105\099\107\101\100\033")
+print(IIIIIO[(45-5)])
 loadstring([[
 --!native
 --!optimize 2
@@ -162,10 +162,10 @@ end
 end,
 })
 
-_lv0009:CreateButton({
-Name="\102\097\115\116\032\102\105\114\105\110\103",
+IIII1I:CreateButton({
+Name=IIIIIO[(16+25)],
 Callback=function()
-print("\067\108\105\099\107\101\100\033")
+print(IIIIIO[(12+28)])
 loadstring([[
 --!native
 --!optimize 2
@@ -211,415 +211,415 @@ end
 end,
 })
 
-_lv0009:CreateButton({
-Name="\115\107\105\110\032\099\104\097\110\103\101\114\032\086\051",
+IIII1I:CreateButton({
+Name=IIIIIO[(41+1)],
 Callback=function()
-print("\067\108\105\099\107\101\100\033")
-loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\115\117\112\112\111\114\116\101\114\108\111\099\107\045\115\111\117\114\099\101\047\083\107\105\110\045\099\104\097\110\103\101\114\045\086\051\045\066\069\084\065\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\115\107\105\110\037\050\048\099\104\097\110\103\101\114\037\050\048\086\051\037\050\048\040\066\069\084\065\041\046\108\117\097"))()
+print(IIIIIO[(8+32)])
+loadstring(game:HttpGet(IIIIIO[(53-10)]))()
 end,
 })
 
-_lv0009:CreateButton({
-Name="\115\105\108\101\110\116\032\097\105\109\032\118\050\040\070\073\088\069\068\041",
+IIII1I:CreateButton({
+Name=IIIIIO[(52-8)],
 Callback=function()
-print("\099\108\105\099\107\101\100\033")
-local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
-local _lv000F=require(_lv000B.Modules.Utility)
-local _lv0010=game:GetService("\080\108\097\121\101\114\115")
-local _lv0011=game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101")
-local _lv0012=_lv0010.LocalPlayer
-local _lv0013=_lv000F.Raycast
+print(IIIIIO[(50-5)])
+local IIII1O=game:GetService(IIIIIO[(9+11)])
+local IIIllI=require(IIII1O.Modules.Utility)
+local IIIlll=game:GetService(IIIIIO[(1+1)])
+local IIIllO=game:GetService(IIIIIO[(48-2)])
+local IIIlOI=IIIlll.LocalPlayer
+local IIIlOl=IIIllI.Raycast
 
-local _lv0014=150
-local _lv0015=5
-local _lv0016=45
+local IIIlOO=(112+38)
+local IIIl0I=(8-3)
+local IIIl0l=(28+17)
 
-local function _lv0017()
-return _lv0011.TouchEnabled and not _lv0011.KeyboardEnabled and not _lv0011.MouseEnabled
+local function IIIl0O()
+return IIIllO.TouchEnabled and not IIIllO.KeyboardEnabled and not IIIllO.MouseEnabled
 end
 
-local function _lv0018()
-if _lv0017()then
-return 35
+local function IIIl1I()
+if IIIl0O()then
+return(36-1)
 end
-return _lv0016
+return IIIl0l
 end
 
-local function _lv0004(_lv004F)
-if not _lv004F or _lv004F==_lv0012 then
+local function IIIIOl(IIlIOl)
+if not IIlIOl or IIlIOl==IIIlOI then
 return true
 end
-if _lv0012.Team and _lv004F.Team and _lv0012.Team==_lv004F.Team then
+if IIIlOI.Team and IIlIOl.Team and IIIlOI.Team==IIlIOl.Team then
 return true
 end
-local _lv0005=_lv0012:GetAttribute("\084\101\097\109\073\068")or _lv0012:GetAttribute("\084\101\097\109")
-local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")or _lv004F:GetAttribute("\084\101\097\109")
-if _lv0005~=nil and _lv0006~=nil then
-return tostring(_lv0005)==tostring(_lv0006)
+local IIIIOO=IIIlOI:GetAttribute(IIIIIO[(19-8)])or IIIlOI:GetAttribute(IIIIIO[(4+8)])
+local IIII0I=IIlIOl:GetAttribute(IIIIIO[(7+4)])or IIlIOl:GetAttribute(IIIIIO[(13-1)])
+if IIIIOO~=nil and IIII0I~=nil then
+return tostring(IIIIOO)==tostring(IIII0I)
 end
 return false
 end
 
-local function _lv0019(_lv002A,targetPart)
-local _lv001A=_lv0012.Character
-if not _lv001A or not targetPart then
+local function IIIl1l(III0II,targetPart)
+local IIIl1O=IIIlOI.Character
+if not IIIl1O or not targetPart then
 return false
 end
-local _lv001B=_lv001A:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then
+local IIIOII=IIIl1O:FindFirstChild(IIIIIO[(49-2)])
+if not IIIOII then
 return false
 end
-local _lv001C=targetPart.Position-_lv001B.Position
-if _lv001C.Magnitude<=0 then
+local IIIOIl=targetPart.Position-IIIOII.Position
+if IIIOIl.Magnitude<=0 then
 return false
 end
-local _lv001D=RaycastParams.new()
-_lv001D.FilterType=Enum.RaycastFilterType.Exclude
-_lv001D.FilterDescendantsInstances={
-_lv001A
+local IIIOIO=RaycastParams.new()
+IIIOIO.FilterType=Enum.RaycastFilterType.Exclude
+IIIOIO.FilterDescendantsInstances={
+IIIl1O
 }
-_lv001D.IgnoreWater=true
-local _lv001E=_lv0031:Raycast(
-_lv001B.Position,
-_lv001C,
-_lv001D
+IIIOIO.IgnoreWater=true
+local IIIOlI=III0Ol:Raycast(
+IIIOII.Position,
+IIIOIl,
+IIIOIO
 )
-if not _lv001E then
+if not IIIOlI then
 return true
 end
-return _lv001E.Instance:IsDescendantOf(_lv002A)
+return IIIOlI.Instance:IsDescendantOf(III0II)
 end
 
-local function _lv001F(targetPosition)
-local _lv0020=_lv0031.CurrentCamera
-if not _lv0020 then return false end
+local function IIIOll(targetPosition)
+local IIIOlO=III0Ol.CurrentCamera
+if not IIIOlO then return false end
 
-local _lv0021=(targetPosition-_lv0020.CFrame.Position).Unit
+local IIIOOI=(targetPosition-IIIOlO.CFrame.Position).Unit
 
-local _lv0022=_lv0020.CFrame.LookVector
+local IIIOOl=IIIOlO.CFrame.LookVector
 
-local _lv0023=math.acos(math.clamp(_lv0022:Dot(_lv0021),-1,1))
-local _lv0024=math.deg(_lv0023)
-return _lv0024<=_lv0018()
+local IIIOOO=math.acos(math.clamp(IIIOOl:Dot(IIIOOI),-1,1))
+local IIIO0I=math.deg(IIIOOO)
+return IIIO0I<=IIIl1I()
 end
 
-local function _lv0025()
-local _lv0026=_lv0012.Character
-if not _lv0026 then
+local function IIIO0l()
+local IIIO0O=IIIlOI.Character
+if not IIIO0O then
 return nil
 end
-local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then
+local IIIOII=IIIO0O:FindFirstChild(IIIIIO[(1+46)])
+if not IIIOII then
 return nil
 end
-local _lv0027=nil
-local _lv0028=_lv0014+1
-local _lv0029=_lv0018()
-for _,p in ipairs(_lv0010:GetPlayers())do
-if p~=_lv0012 and p.Character and not _lv0004(p)then
-local _lv002A=p.Character
-local _lv002B=_lv002A:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-local _lv002C=_lv002A:FindFirstChild("\072\101\097\100")
-local _lv002D=_lv002A:FindFirstChildOfClass("\072\117\109\097\110\111\105\100")
-if _lv002B and _lv002C and _lv002D and _lv002D.Health>0 then
-local _lv002E=
-(_lv001B.Position-_lv002B.Position).Magnitude
+local IIIO1I=nil
+local IIIO1l=IIIlOO+1
+local IIIO1O=IIIl1I()
+for _,p in ipairs(IIIlll:GetPlayers())do
+if p~=IIIlOI and p.Character and not IIIIOl(p)then
+local III0II=p.Character
+local III0Il=III0II:FindFirstChild(IIIIIO[(53-6)])
+local III0IO=III0II:FindFirstChild(IIIIIO[(55-7)])
+local III0lI=III0II:FindFirstChildOfClass(IIIIIO[(5+44)])
+if III0Il and III0IO and III0lI and III0lI.Health>0 then
+local III0ll=
+(IIIOII.Position-III0Il.Position).Magnitude
 
-if _lv001F(_lv002C.Position)then
-if _lv002E>_lv0015
-and _lv002E<_lv0028
-and _lv0019(_lv002A,_lv002C)then
-_lv0028=_lv002E
-_lv0027=p
+if IIIOll(III0IO.Position)then
+if III0ll>IIIl0I
+and III0ll<IIIO1l
+and IIIl1l(III0II,III0IO)then
+IIIO1l=III0ll
+IIIO1I=p
 end
 end
 end
 end
 end
-return _lv0027
+return IIIO1I
 end
 
-_lv000F.Raycast=function(
+IIIllI.Raycast=function(
 self,
-_lv003B,
+III1IO,
 endPos,
 maxDist,
-_lv003E,
+III1lO,
 filterType,
 debugMode
 )
-local _lv002F=_lv0025()
-if not _lv002F
-or not _lv002F.Character
-or not _lv002F.Character:FindFirstChild("\072\101\097\100")then
-return _lv0013(
+local III0lO=IIIO0l()
+if not III0lO
+or not III0lO.Character
+or not III0lO.Character:FindFirstChild(IIIIIO[(16+32)])then
+return IIIlOl(
 self,
-_lv003B,
+III1IO,
 endPos,
 maxDist,
-_lv003E,
-filterType,
-debugMode
-)
-end
-local _lv002C=_lv002F.Character.Head
-local _lv0030=_lv002C.Position
-local _lv001C=_lv0030-_lv003B
-local _lv002E=_lv001C.Magnitude
-if _lv002E>_lv0014 or _lv002E<=0 then
-return _lv0013(
-self,
-_lv003B,
-endPos,
-maxDist,
-_lv003E,
+III1lO,
 filterType,
 debugMode
 )
 end
-_lv001C=_lv001C.Unit
-if maxDist and _lv002E>maxDist then
-_lv002E=maxDist
-_lv0030=_lv003B+_lv001C*maxDist
+local III0IO=III0lO.Character.Head
+local III0OI=III0IO.Position
+local IIIOIl=III0OI-III1IO
+local III0ll=IIIOIl.Magnitude
+if III0ll>IIIlOO or III0ll<=0 then
+return IIIlOl(
+self,
+III1IO,
+endPos,
+maxDist,
+III1lO,
+filterType,
+debugMode
+)
+end
+IIIOIl=IIIOIl.Unit
+if maxDist and III0ll>maxDist then
+III0ll=maxDist
+III0OI=III1IO+IIIOIl*maxDist
 end
 return{
-Position=_lv0030,
-Distance=_lv002E,
-Instance=_lv002C,
-Material=_lv002C.Material,
-Normal=-_lv001C
+Position=III0OI,
+Distance=III0ll,
+Instance=III0IO,
+Material=III0IO.Material,
+Normal=-IIIOIl
 }
 end
 end,
 })
 
-_lv0009:CreateButton({
-Name="\115\105\108\101\110\116\032\097\105\109\032\086\051\040\085\080\068\065\084\069\068\041",
+IIII1I:CreateButton({
+Name=IIIIIO[(48+2)],
 Callback=function()
-print("\067\108\105\099\107\101\100\033")
-local _lv000B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
-local _lv000F=require(_lv000B.Modules.Utility)
-local _lv0010=game:GetService("\080\108\097\121\101\114\115")
-local _lv0031=game:GetService("\087\111\114\107\115\112\097\099\101")
-local _lv0012=_lv0010.LocalPlayer
-local _lv0013=_lv000F.Raycast
-local _lv0032=nil
-local _lv0033=0
-local _lv0034=0.1
-local _lv0014=150
-local _lv0015=5
+print(IIIIIO[(50-10)])
+local IIII1O=game:GetService(IIIIIO[(10+10)])
+local IIIllI=require(IIII1O.Modules.Utility)
+local IIIlll=game:GetService(IIIIIO[(1+1)])
+local III0Ol=game:GetService(IIIIIO[(37+14)])
+local IIIlOI=IIIlll.LocalPlayer
+local IIIlOl=IIIllI.Raycast
+local III0OO=nil
+local III00I=0
+local III00l=0.1
+local IIIlOO=(7+143)
+local IIIl0I=(15-10)
 
-local _lv0016=60
-local _lv0035=_lv0016/2
+local IIIl0l=(63-3)
+local III00O=IIIl0l/(1+1)
 
-local function _lv0004(_lv004F)
-if not _lv004F or _lv004F==_lv0012 then
+local function IIIIOl(IIlIOl)
+if not IIlIOl or IIlIOl==IIIlOI then
 return true
 end
-if _lv0012.Team and _lv004F.Team then
-if _lv0012.Team==_lv004F.Team then
+if IIIlOI.Team and IIlIOl.Team then
+if IIIlOI.Team==IIlIOl.Team then
 return true
 end
 end
-local _lv0005=_lv0012:GetAttribute("\084\101\097\109\073\068")or _lv0012:GetAttribute("\084\101\097\109")
-local _lv0006=_lv004F:GetAttribute("\084\101\097\109\073\068")or _lv004F:GetAttribute("\084\101\097\109")
-if _lv0005~=nil and _lv0006~=nil then
-if tostring(_lv0005)==tostring(_lv0006)then
+local IIIIOO=IIIlOI:GetAttribute(IIIIIO[(8+3)])or IIIlOI:GetAttribute(IIIIIO[(15-3)])
+local IIII0I=IIlIOl:GetAttribute(IIIIIO[(20-9)])or IIlIOl:GetAttribute(IIIIIO[(10+2)])
+if IIIIOO~=nil and IIII0I~=nil then
+if tostring(IIIIOO)==tostring(IIII0I)then
 return true
 end
 end
 return false
 end
 
-local function _lv001F(_lv003B,lookDirection,targetPos)
-if not _lv003B or not lookDirection or not targetPos then
+local function IIIOll(III1IO,lookDirection,targetPos)
+if not III1IO or not lookDirection or not targetPos then
 return false
 end
-local _lv0036=(targetPos-_lv003B).Unit
-local _lv0037=lookDirection:Dot(_lv0036)
-local _lv0023=math.deg(math.acos(_lv0037))
-return _lv0023<=_lv0035
+local III01I=(targetPos-III1IO).Unit
+local III01l=lookDirection:Dot(III01I)
+local IIIOOO=math.deg(math.acos(III01l))
+return IIIOOO<=III00O
 end
-local function _lv0025()
-local _lv0038=tick()
-if _lv0032 and(_lv0038-_lv0033)<_lv0034 then
-if _lv0032.Character and _lv0032.Character:FindFirstChild("\072\117\109\097\110\111\105\100")and _lv0032.Character.Humanoid.Health>0 and not _lv0004(_lv0032)then
-local _lv0026=_lv0012.Character
-if _lv0026 then
-local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if _lv001B then
-local _lv002B=_lv0032.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if _lv002B then
-local _lv0039=(_lv001B.Position-_lv002B.Position).Magnitude
-if _lv0039>_lv0015 and _lv0039<_lv0014 then
-return _lv0032
-end
-end
+local function IIIO0l()
+local III01O=tick()
+if III0OO and(III01O-III00I)<III00l then
+if III0OO.Character and III0OO.Character:FindFirstChild(IIIIIO[(59-10)])and III0OO.Character.Humanoid.Health>0 and not IIIIOl(III0OO)then
+local IIIO0O=IIIlOI.Character
+if IIIO0O then
+local IIIOII=IIIO0O:FindFirstChild(IIIIIO[(49-2)])
+if IIIOII then
+local III0Il=III0OO.Character:FindFirstChild(IIIIIO[(49-2)])
+if III0Il then
+local III1II=(IIIOII.Position-III0Il.Position).Magnitude
+if III1II>IIIl0I and III1II<IIIlOO then
+return III0OO
 end
 end
-_lv0032=nil
+end
+end
+III0OO=nil
 else
-_lv0032=nil
+III0OO=nil
 end
 end
-local _lv0026=_lv0012.Character
-if not _lv0026 then
-_lv0032=nil
+local IIIO0O=IIIlOI.Character
+if not IIIO0O then
+III0OO=nil
 return nil
 end
-local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then
-_lv0032=nil
+local IIIOII=IIIO0O:FindFirstChild(IIIIIO[(50-3)])
+if not IIIOII then
+III0OO=nil
 return nil
 end
 
-local _lv0020=_lv0031.CurrentCamera
-if not _lv0020 then
-_lv0032=nil
+local IIIOlO=III0Ol.CurrentCamera
+if not IIIOlO then
+III0OO=nil
 return nil
 end
-local _lv003A=_lv0020.CFrame.LookVector
-local _lv003B=_lv001B.Position
-local _lv0027=nil
-local _lv0028=_lv0014+1
-for _,p in ipairs(_lv0010:GetPlayers())do
-if p~=_lv0012 and p.Character then
-local _lv002B=p.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-local _lv002D=p.Character:FindFirstChild("\072\117\109\097\110\111\105\100")
+local III1Il=IIIOlO.CFrame.LookVector
+local III1IO=IIIOII.Position
+local IIIO1I=nil
+local IIIO1l=IIIlOO+1
+for _,p in ipairs(IIIlll:GetPlayers())do
+if p~=IIIlOI and p.Character then
+local III0Il=p.Character:FindFirstChild(IIIIIO[(29+18)])
+local III0lI=p.Character:FindFirstChild(IIIIIO[(50-1)])
 
-if _lv002B and _lv002D and _lv002D.Health>0 and not _lv0004(p)then
-local _lv0039=(_lv001B.Position-_lv002B.Position).Magnitude
-if _lv0039>_lv0015 and _lv0039<_lv0028 then
+if III0Il and III0lI and III0lI.Health>0 and not IIIIOl(p)then
+local III1II=(IIIOII.Position-III0Il.Position).Magnitude
+if III1II>IIIl0I and III1II<IIIO1l then
 
-if _lv001F(_lv003B,_lv003A,_lv002B.Position)then
-_lv0028=_lv0039
-_lv0027=p
+if IIIOll(III1IO,III1Il,III0Il.Position)then
+IIIO1l=III1II
+IIIO1I=p
 end
 end
 end
 end
 end
-_lv0032=_lv0027
-_lv0033=_lv0038
-return _lv0027
+III0OO=IIIO1I
+III00I=III01O
+return IIIO1I
 end
-local function _lv003C(_lv003B,targetPos,targetCharacter)
-if not _lv003B or not targetPos or not targetCharacter then
+local function III1lI(III1IO,targetPos,targetCharacter)
+if not III1IO or not targetPos or not targetCharacter then
 return false
 end
-local _lv003D=(targetPos-_lv003B).Magnitude
-if _lv003D<2 then
+local III1ll=(targetPos-III1IO).Magnitude
+if III1ll<(1+1)then
 return true
 end
-if _lv003D>_lv0014 then
+if III1ll>IIIlOO then
 return false
 end
-local _lv001D=RaycastParams.new()
-_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
-local _lv003E={_lv0012.Character,targetCharacter}
-_lv001D.FilterDescendantsInstances=_lv003E
-_lv001D.IgnoreWater=true
-local _lv001C=(targetPos-_lv003B).Unit
-local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv003D,_lv001D)
-if not _lv001E then
+local IIIOIO=RaycastParams.new()
+IIIOIO.FilterType=Enum.RaycastFilterType.Blacklist
+local III1lO={IIIlOI.Character,targetCharacter}
+IIIOIO.FilterDescendantsInstances=III1lO
+IIIOIO.IgnoreWater=true
+local IIIOIl=(targetPos-III1IO).Unit
+local IIIOlI=III0Ol:Raycast(III1IO,IIIOIl*III1ll,IIIOIO)
+if not IIIOlI then
 return true
 end
-local _lv003F=_lv001E.Instance
-if _lv003F then
-local _lv0040=_lv003F.Parent
-if _lv003F==targetCharacter or _lv003F:IsDescendantOf(targetCharacter)then
+local III1OI=IIIOlI.Instance
+if III1OI then
+local III1Ol=III1OI.Parent
+if III1OI==targetCharacter or III1OI:IsDescendantOf(targetCharacter)then
 return true
 end
-if _lv0040 and(_lv0040==targetCharacter or _lv0040:IsDescendantOf(targetCharacter))then
+if III1Ol and(III1Ol==targetCharacter or III1Ol:IsDescendantOf(targetCharacter))then
 return true
 end
 end
 return false
 end
-_lv000F.Raycast=function(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
-if not _lv003B then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+IIIllI.Raycast=function(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
+if not III1IO then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv002F=_lv0025()
-if not _lv002F or not _lv002F.Character then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+local III0lO=IIIO0l()
+if not III0lO or not III0lO.Character then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv0041=_lv002F.Character
-if not _lv0041 or not _lv0041.Parent then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+local III1OO=III0lO.Character
+if not III1OO or not III1OO.Parent then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv0042=_lv0041:FindFirstChild("\072\101\097\100")
-local _lv0043=_lv0041:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv0042 or not _lv0043 then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+local III10I=III1OO:FindFirstChild(IIIIIO[(55-7)])
+local III10l=III1OO:FindFirstChild(IIIIIO[(53-6)])
+if not III10I or not III10l then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv0044=_lv0042.Position
-local _lv0045=_lv0043.Position
-local _lv0046=(_lv0044-_lv003B).Magnitude
-if _lv0046>_lv0014 then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+local III10O=III10I.Position
+local III11I=III10l.Position
+local III11l=(III10O-III1IO).Magnitude
+if III11l>IIIlOO then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
 
-local _lv0020=_lv0031.CurrentCamera
-if _lv0020 then
-local _lv003A=_lv0020.CFrame.LookVector
-if not _lv001F(_lv003B,_lv003A,_lv0044)then
+local IIIOlO=III0Ol.CurrentCamera
+if IIIOlO then
+local III1Il=IIIOlO.CFrame.LookVector
+if not IIIOll(III1IO,III1Il,III10O)then
 
-if not _lv001F(_lv003B,_lv003A,_lv0045)then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+if not IIIOll(III1IO,III1Il,III11I)then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
 end
 end
-local _lv0047=math.min(maxDist or 1000,_lv0014)
-if _lv0046>_lv0047 then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+local III11O=math.min(maxDist or(587+413),IIIlOO)
+if III11l>III11O then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv0048=_lv0044
-local _lv0049=_lv003C(_lv003B,_lv0048,_lv0041)
-if not _lv0049 then
-_lv0049=_lv003C(_lv003B,_lv0045,_lv0041)
-if _lv0049 then
-_lv0048=_lv0045
+local IIlIII=III10O
+local IIlIIl=III1lI(III1IO,IIlIII,III1OO)
+if not IIlIIl then
+IIlIIl=III1lI(III1IO,III11I,III1OO)
+if IIlIIl then
+IIlIII=III11I
 end
 end
-if not _lv0049 then
-return _lv0013(self,_lv003B,endPos,maxDist,_lv003E,filterType,debugMode)
+if not IIlIIl then
+return IIIlOl(self,III1IO,endPos,maxDist,III1lO,filterType,debugMode)
 end
-local _lv004A=(_lv0048-_lv003B).Unit
-local _lv003D=(_lv0048-_lv003B).Magnitude
-if _lv003D>_lv0047 then
-_lv003D=_lv0047
-_lv0048=_lv003B+_lv004A*_lv0047
+local IIlIIO=(IIlIII-III1IO).Unit
+local III1ll=(IIlIII-III1IO).Magnitude
+if III1ll>III11O then
+III1ll=III11O
+IIlIII=III1IO+IIlIIO*III11O
 end
 return{
-Position=_lv0048,
-Distance=_lv003D,
-Instance=_lv0042,
-Material=_lv0042.Material,
-Normal=-_lv004A
+Position=IIlIII,
+Distance=III1ll,
+Instance=III10I,
+Material=III10I.Material,
+Normal=-IIlIIO
 }
 end
-_lv0012.CharacterAdded:Connect(function()
-_lv0032=nil
-_lv0033=0
+IIIlOI.CharacterAdded:Connect(function()
+III0OO=nil
+III00I=0
 end)
-_lv0010.PlayerRemoving:Connect(function()
-_lv0032=nil
-_lv0033=0
+IIIlll.PlayerRemoving:Connect(function()
+III0OO=nil
+III00I=0
 end)
 end,
 })
 
-_lv0009:CreateButton({
-Name="\110\111\032\115\112\114\101\097\100",
+IIII1I:CreateButton({
+Name=IIIIIO[(55-3)],
 Callback=function()
-print("\067\108\105\099\107\101\100\033")
+print(IIIIIO[(50-10)])
 
-local _lv004B=game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101")
-local _lv004C=require(_lv004B.Modules.ItemLibrary)
-local function _lv004D(tbl)
+local IIlIlI=game:GetService(IIIIIO[(22-2)])
+local IIlIll=require(IIlIlI.Modules.ItemLibrary)
+local function IIlIlO(tbl)
 for _,v in pairs(tbl)do
-if typeof(v)=="\116\097\098\108\101"then
+if typeof(v)==IIIIIO[(61-8)]then
 if v.ShootSpread then
 v.ShootSpread=0
 end
@@ -629,279 +629,279 @@ end
 if v.ShootRecoil then
 v.ShootRecoil=0
 end
-_lv004D(v)
+IIlIlO(v)
 end
 end
 end
-_lv004D(_lv004C)
-print("✅\032\070\097\115\116\032\070\105\114\105\110\103\032\045\032\078\111\032\082\101\099\111\105\108\047\083\112\114\101\097\100\032\076\111\097\100\101\100\033")
+IIlIlO(IIlIll)
+print(IIIIIO[(43+11)])
 end,
 })
-local _lv004E=_lv0009:CreateButton({
-Name="\069\110\097\098\108\101\032\097\105\109\098\111\116",
+local IIlIOI=IIII1I:CreateButton({
+Name=IIIIIO[(57-2)],
 Callback=function()
 
-local _lv004F=game:GetService("\080\108\097\121\101\114\115").LocalPlayer
+local IIlIOl=game:GetService(IIIIIO[(1+1)]).LocalPlayer
 
-repeat task.wait()until _lv004F and _lv004F.Character
-local _lv0050=_lv004F.PlayerScripts:WaitForChild("\067\111\110\116\114\111\108\108\101\114\115",math.huge)
-local _lv0051=require(_lv0050:WaitForChild("\067\097\109\101\114\097\067\111\110\116\114\111\108\108\101\114",math.huge))
+repeat task.wait()until IIlIOl and IIlIOl.Character
+local IIlIOO=IIlIOl.PlayerScripts:WaitForChild(IIIIIO[(30+26)],math.huge)
+local IIlI0I=require(IIlIOO:WaitForChild(IIIIIO[(65-8)],math.huge))
 
-local _lv0014=150
-local _lv0015=5
-local _lv0034=0.15
+local IIIlOO=(23+127)
+local IIIl0I=(11-6)
+local III00l=0.15
 
-local _lv0032=nil
-local _lv0033=0
+local III0OO=nil
+local III00I=0
 
-local function _lv0052(_lv002F)
-if _lv002F==_lv004F then return false end
-local _lv0026=_lv002F.Character
-if not _lv0026 then return false end
-local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
-if not _lv0053 or _lv0053.Health<=0 then return false end
-local _lv0005=_lv004F.Team or _lv004F:GetAttribute("\084\101\097\109")or _lv004F:GetAttribute("\084\101\097\109\073\068")
-local _lv0054=_lv002F.Team or _lv002F:GetAttribute("\084\101\097\109")or _lv002F:GetAttribute("\084\101\097\109\073\068")
-if _lv0005 and _lv0054 then
-return _lv0005~=_lv0054
+local function IIlI0l(III0lO)
+if III0lO==IIlIOl then return false end
+local IIIO0O=III0lO.Character
+if not IIIO0O then return false end
+local IIlI0O=IIIO0O:FindFirstChild(IIIIIO[(12+37)])
+if not IIlI0O or IIlI0O.Health<=0 then return false end
+local IIIIOO=IIlIOl.Team or IIlIOl:GetAttribute(IIIIIO[(11+1)])or IIlIOl:GetAttribute(IIIIIO[(9+2)])
+local IIlI1I=III0lO.Team or III0lO:GetAttribute(IIIIIO[(10+2)])or III0lO:GetAttribute(IIIIIO[(6+5)])
+if IIIIOO and IIlI1I then
+return IIIIOO~=IIlI1I
 end
 return true
 end
 
-local function _lv003C(targetCharacter,targetPart)
-local _lv0020=_lv0031.CurrentCamera
-if not _lv0020 or not targetPart then return false end
-local _lv003B=_lv0020.CFrame.Position
-local _lv001C=(targetPart.Position-_lv003B).Unit
-local _lv002E=(targetPart.Position-_lv003B).Magnitude
-if _lv002E<1 then return true end
-local _lv003E={
-_lv004F.Character,
+local function III1lI(targetCharacter,targetPart)
+local IIIOlO=III0Ol.CurrentCamera
+if not IIIOlO or not targetPart then return false end
+local III1IO=IIIOlO.CFrame.Position
+local IIIOIl=(targetPart.Position-III1IO).Unit
+local III0ll=(targetPart.Position-III1IO).Magnitude
+if III0ll<1 then return true end
+local III1lO={
+IIlIOl.Character,
 targetCharacter,
 }
-local _lv001D=RaycastParams.new()
-_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
-_lv001D.FilterDescendantsInstances=_lv003E
-_lv001D.IgnoreWater=true
-local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv002E,_lv001D)
-if not _lv001E then return true end
-local _lv003F=_lv001E.Instance
-if _lv003F==targetPart or _lv003F:IsDescendantOf(targetCharacter)then
+local IIIOIO=RaycastParams.new()
+IIIOIO.FilterType=Enum.RaycastFilterType.Blacklist
+IIIOIO.FilterDescendantsInstances=III1lO
+IIIOIO.IgnoreWater=true
+local IIIOlI=III0Ol:Raycast(III1IO,IIIOIl*III0ll,IIIOIO)
+if not IIIOlI then return true end
+local III1OI=IIIOlI.Instance
+if III1OI==targetPart or III1OI:IsDescendantOf(targetCharacter)then
 return true
 end
 return false
 end
 
-local function _lv0055(_lv002F)
-if not _lv002F then return false end
-local _lv0026=_lv002F.Character
-if not _lv0026 then return false end
-local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
-if not _lv0053 or _lv0053.Health<=0 then return false end
-if not _lv0052(_lv002F)then return false end
-local _lv002C=_lv0026:FindFirstChild("\072\101\097\100")
-if not _lv002C then return false end
-local _lv001B=_lv004F.Character and _lv004F.Character:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then return false end
-local _lv003D=(_lv001B.Position-_lv002C.Position).Magnitude
-if _lv003D>_lv0014 or _lv003D<_lv0015 then return false end
-if not _lv003C(_lv0026,_lv002C)then return false end
+local function IIlI1l(III0lO)
+if not III0lO then return false end
+local IIIO0O=III0lO.Character
+if not IIIO0O then return false end
+local IIlI0O=IIIO0O:FindFirstChild(IIIIIO[(58-9)])
+if not IIlI0O or IIlI0O.Health<=0 then return false end
+if not IIlI0l(III0lO)then return false end
+local III0IO=IIIO0O:FindFirstChild(IIIIIO[(5+43)])
+if not III0IO then return false end
+local IIIOII=IIlIOl.Character and IIlIOl.Character:FindFirstChild(IIIIIO[(33+14)])
+if not IIIOII then return false end
+local III1ll=(IIIOII.Position-III0IO.Position).Magnitude
+if III1ll>IIIlOO or III1ll<IIIl0I then return false end
+if not III1lI(IIIO0O,III0IO)then return false end
 return true
 end
 
-local function _lv0056()
-local _lv0038=tick()
+local function IIlI1O()
+local III01O=tick()
 
-if _lv0032 and(_lv0038-_lv0033)<_lv0034 then
-if _lv0055(_lv0032)then
-return _lv0032
+if III0OO and(III01O-III00I)<III00l then
+if IIlI1l(III0OO)then
+return III0OO
 else
-_lv0032=nil
+III0OO=nil
 end
 end
 
-local _lv0026=_lv004F.Character
-if not _lv0026 then return nil end
-local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then return nil end
-local _lv0027,_lv0028=nil,_lv0014+1
-for _,plr in ipairs(game:GetService("\080\108\097\121\101\114\115"):GetPlayers())do
-if _lv0052(plr)then
-local _lv0057=plr.Character
-if _lv0057 then
-local _lv0058=_lv0057:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-local _lv002C=_lv0057:FindFirstChild("\072\101\097\100")
-if _lv0058 and _lv002C then
-local _lv003D=(_lv001B.Position-_lv0058.Position).Magnitude
-if _lv003D<_lv0028 and _lv003D>_lv0015 and _lv003C(_lv0057,_lv002C)then
-_lv0028=_lv003D
-_lv0027=plr
+local IIIO0O=IIlIOl.Character
+if not IIIO0O then return nil end
+local IIIOII=IIIO0O:FindFirstChild(IIIIIO[(4+43)])
+if not IIIOII then return nil end
+local IIIO1I,IIIO1l=nil,IIIlOO+1
+for _,plr in ipairs(game:GetService(IIIIIO[(1+1)]):GetPlayers())do
+if IIlI0l(plr)then
+local IIllII=plr.Character
+if IIllII then
+local IIllIl=IIllII:FindFirstChild(IIIIIO[(51-4)])
+local III0IO=IIllII:FindFirstChild(IIIIIO[(55-7)])
+if IIllIl and III0IO then
+local III1ll=(IIIOII.Position-IIllIl.Position).Magnitude
+if III1ll<IIIO1l and III1ll>IIIl0I and III1lI(IIllII,III0IO)then
+IIIO1l=III1ll
+IIIO1I=plr
 end
 end
 end
 end
 end
 
-_lv0032=_lv0027
-_lv0033=_lv0038
-return _lv0027
+III0OO=IIIO1I
+III00I=III01O
+return IIIO1I
 end
 
-game:GetService("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function()
-local _lv002F=_lv0056()
-if _lv002F and _lv002F.Character then
-local _lv002C=_lv002F.Character:FindFirstChild("\072\101\097\100")
-if _lv002C then
-local _lv0020=_lv0031.CurrentCamera
-if _lv0020 then
+game:GetService(IIIIIO[(51+7)]).RenderStepped:Connect(function()
+local III0lO=IIlI1O()
+if III0lO and III0lO.Character then
+local III0IO=III0lO.Character:FindFirstChild(IIIIIO[(37+11)])
+if III0IO then
+local IIIOlO=III0Ol.CurrentCamera
+if IIIOlO then
 
-local _lv0059=CFrame.lookAt(_lv0020.CFrame.Position,_lv002C.Position)
-local _lv005A=_lv0059-_lv0059.Position
-_lv0051:MimicRotation(_lv005A)
+local IIllIO=CFrame.lookAt(IIIOlO.CFrame.Position,III0IO.Position)
+local IIlllI=IIllIO-IIllIO.Position
+IIlI0I:MimicRotation(IIlllI)
 end
 end
 end
 end)
 
-_lv004F.CharacterAdded:Connect(function()
-_lv0032=nil
-_lv0033=0
+IIlIOl.CharacterAdded:Connect(function()
+III0OO=nil
+III00I=0
 end)
-game:GetService("\080\108\097\121\101\114\115").PlayerRemoving:Connect(function()
-_lv0032=nil
-_lv0033=0
+game:GetService(IIIIIO[(1+1)]).PlayerRemoving:Connect(function()
+III0OO=nil
+III00I=0
 end)
 
-game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101").InputBegan:Connect(function(input,gp)
+game:GetService(IIIIIO[(48-2)]).InputBegan:Connect(function(input,gp)
 if gp then return end
 if input.KeyCode==Enum.KeyCode.T then
-print("\084\101\115\116\105\110\103\032\105\110\115\116\097\110\116\032\115\110\097\112")
-_lv0051:MimicRotation(CFrame.Angles(0,math.rad(45),0))
+print(IIIIIO[(62-3)])
+IIlI0I:MimicRotation(CFrame.Angles(0,math.rad((53-8)),0))
 end
 end)
-print("🚀\032\073\110\115\116\097\110\116\032\097\105\109\098\111\116\032\119\105\116\104\032\099\097\099\104\105\110\103\032\108\111\097\100\101\100\033\032\040\067\097\099\104\101\058\032".._lv0034.."\115\041")
+print(IIIIIO[(62-2)]..III00l..IIIIIO[(41+20)])
 end,
 })
-local _lv004E=_lv0009:CreateButton({
-Name="\069\110\097\098\108\101\032\097\105\109\098\111\116\032\048\046\051\032\115\109\111\111\116\104\105\110\103",
+local IIlIOI=IIII1I:CreateButton({
+Name=IIIIIO[(11+51)],
 Callback=function()
 
-local _lv004F=game:GetService("\080\108\097\121\101\114\115").LocalPlayer
+local IIlIOl=game:GetService(IIIIIO[(1+1)]).LocalPlayer
 
-repeat task.wait()until _lv004F and _lv004F.Character
-local _lv0050=_lv004F.PlayerScripts:WaitForChild("\067\111\110\116\114\111\108\108\101\114\115",math.huge)
-local _lv0051=require(_lv0050:WaitForChild("\067\097\109\101\114\097\067\111\110\116\114\111\108\108\101\114",math.huge))
+repeat task.wait()until IIlIOl and IIlIOl.Character
+local IIlIOO=IIlIOl.PlayerScripts:WaitForChild(IIIIIO[(61-5)],math.huge)
+local IIlI0I=require(IIlIOO:WaitForChild(IIIIIO[(65-8)],math.huge))
 
-local _lv0014=150
-local _lv0015=5
-local _lv005B=0.3
+local IIIlOO=(157-7)
+local IIIl0I=(10-5)
+local IIllll=0.3
 
-local function _lv0052(_lv002F)
-if _lv002F==_lv004F then return false end
-local _lv0026=_lv002F.Character
-if not _lv0026 then return false end
-local _lv0053=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100")
-if not _lv0053 or _lv0053.Health<=0 then return false end
-local _lv0005=_lv004F.Team or _lv004F:GetAttribute("\084\101\097\109")or _lv004F:GetAttribute("\084\101\097\109\073\068")
-local _lv0054=_lv002F.Team or _lv002F:GetAttribute("\084\101\097\109")or _lv002F:GetAttribute("\084\101\097\109\073\068")
-if _lv0005 and _lv0054 then
-return _lv0005~=_lv0054
+local function IIlI0l(III0lO)
+if III0lO==IIlIOl then return false end
+local IIIO0O=III0lO.Character
+if not IIIO0O then return false end
+local IIlI0O=IIIO0O:FindFirstChild(IIIIIO[(26+23)])
+if not IIlI0O or IIlI0O.Health<=0 then return false end
+local IIIIOO=IIlIOl.Team or IIlIOl:GetAttribute(IIIIIO[(14-2)])or IIlIOl:GetAttribute(IIIIIO[(19-8)])
+local IIlI1I=III0lO.Team or III0lO:GetAttribute(IIIIIO[(4+8)])or III0lO:GetAttribute(IIIIIO[(8+3)])
+if IIIIOO and IIlI1I then
+return IIIIOO~=IIlI1I
 end
 return true
 end
 
-local function _lv003C(targetCharacter,targetPart)
-local _lv0020=_lv0031.CurrentCamera
-if not _lv0020 or not targetPart then return false end
-local _lv003B=_lv0020.CFrame.Position
-local _lv001C=(targetPart.Position-_lv003B).Unit
-local _lv002E=(targetPart.Position-_lv003B).Magnitude
+local function III1lI(targetCharacter,targetPart)
+local IIIOlO=III0Ol.CurrentCamera
+if not IIIOlO or not targetPart then return false end
+local III1IO=IIIOlO.CFrame.Position
+local IIIOIl=(targetPart.Position-III1IO).Unit
+local III0ll=(targetPart.Position-III1IO).Magnitude
 
-if _lv002E<1 then return true end
+if III0ll<1 then return true end
 
-local _lv003E={
-_lv004F.Character,
+local III1lO={
+IIlIOl.Character,
 targetCharacter,
 }
-local _lv001D=RaycastParams.new()
-_lv001D.FilterType=Enum.RaycastFilterType.Blacklist
-_lv001D.FilterDescendantsInstances=_lv003E
-_lv001D.IgnoreWater=true
-local _lv001E=_lv0031:Raycast(_lv003B,_lv001C*_lv002E,_lv001D)
+local IIIOIO=RaycastParams.new()
+IIIOIO.FilterType=Enum.RaycastFilterType.Blacklist
+IIIOIO.FilterDescendantsInstances=III1lO
+IIIOIO.IgnoreWater=true
+local IIIOlI=III0Ol:Raycast(III1IO,IIIOIl*III0ll,IIIOIO)
 
-if not _lv001E then return true end
+if not IIIOlI then return true end
 
-local _lv003F=_lv001E.Instance
-if _lv003F==targetPart or _lv003F:IsDescendantOf(targetCharacter)then
+local III1OI=IIIOlI.Instance
+if III1OI==targetPart or III1OI:IsDescendantOf(targetCharacter)then
 return true
 end
 
 return false
 end
 
-local function _lv0056()
-local _lv0026=_lv004F.Character
-if not _lv0026 then return nil end
-local _lv001B=_lv0026:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-if not _lv001B then return nil end
-local _lv0027,_lv0028=nil,_lv0014+1
-for _,plr in ipairs(game:GetService("\080\108\097\121\101\114\115"):GetPlayers())do
-if _lv0052(plr)then
-local _lv0057=plr.Character
-if _lv0057 then
-local _lv0058=_lv0057:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116")
-local _lv002C=_lv0057:FindFirstChild("\072\101\097\100")
-if _lv0058 and _lv002C then
-local _lv003D=(_lv001B.Position-_lv0058.Position).Magnitude
+local function IIlI1O()
+local IIIO0O=IIlIOl.Character
+if not IIIO0O then return nil end
+local IIIOII=IIIO0O:FindFirstChild(IIIIIO[(57-10)])
+if not IIIOII then return nil end
+local IIIO1I,IIIO1l=nil,IIIlOO+1
+for _,plr in ipairs(game:GetService(IIIIIO[(7-5)]):GetPlayers())do
+if IIlI0l(plr)then
+local IIllII=plr.Character
+if IIllII then
+local IIllIl=IIllII:FindFirstChild(IIIIIO[(51-4)])
+local III0IO=IIllII:FindFirstChild(IIIIIO[(2+46)])
+if IIllIl and III0IO then
+local III1ll=(IIIOII.Position-IIllIl.Position).Magnitude
 
-if _lv003D<_lv0028 and _lv003D>_lv0015 and _lv003C(_lv0057,_lv002C)then
-_lv0028=_lv003D
-_lv0027=plr
+if III1ll<IIIO1l and III1ll>IIIl0I and III1lI(IIllII,III0IO)then
+IIIO1l=III1ll
+IIIO1I=plr
 end
 end
 end
 end
 end
-return _lv0027
+return IIIO1I
 end
 
-game:GetService("\082\117\110\083\101\114\118\105\099\101").RenderStepped:Connect(function()
-local _lv002F=_lv0056()
-if _lv002F and _lv002F.Character then
-local _lv002C=_lv002F.Character:FindFirstChild("\072\101\097\100")
-if _lv002C then
-local _lv0020=_lv0031.CurrentCamera
-if _lv0020 then
-local _lv0059=CFrame.lookAt(_lv0020.CFrame.Position,_lv002C.Position)
-local _lv005A=_lv0059-_lv0059.Position
-if _lv005B>0 then
-local _lv005C=_lv0020.CFrame-_lv0020.CFrame.Position
-local _lv005D=_lv005C:Lerp(_lv005A,1-_lv005B)
-_lv0051:MimicRotation(_lv005D)
+game:GetService(IIIIIO[(17+41)]).RenderStepped:Connect(function()
+local III0lO=IIlI1O()
+if III0lO and III0lO.Character then
+local III0IO=III0lO.Character:FindFirstChild(IIIIIO[(51-3)])
+if III0IO then
+local IIIOlO=III0Ol.CurrentCamera
+if IIIOlO then
+local IIllIO=CFrame.lookAt(IIIOlO.CFrame.Position,III0IO.Position)
+local IIlllI=IIllIO-IIllIO.Position
+if IIllll>0 then
+local IIlllO=IIIOlO.CFrame-IIIOlO.CFrame.Position
+local IIllOI=IIlllO:Lerp(IIlllI,1-IIllll)
+IIlI0I:MimicRotation(IIllOI)
 else
-_lv0051:MimicRotation(_lv005A)
+IIlI0I:MimicRotation(IIlllI)
 end
 end
 end
 end
 end)
 
-game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101").InputBegan:Connect(function(input,gp)
+game:GetService(IIIIIO[(14+32)]).InputBegan:Connect(function(input,gp)
 if gp then return end
 if input.KeyCode==Enum.KeyCode.T then
-print("\084\101\115\116\105\110\103\032\077\105\109\105\099\082\111\116\097\116\105\111\110")
-_lv0051:MimicRotation(CFrame.Angles(0,math.rad(45),0))
+print(IIIIIO[(19+44)])
+IIlI0I:MimicRotation(CFrame.Angles(0,math.rad((13+32)),0))
 end
 end)
-print("🚀\032\065\105\109\098\111\116\032\119\105\116\104\032\118\105\115\105\098\105\108\105\116\121\032\099\104\101\099\107\032\108\111\097\100\101\100\033")
+print(IIIIIO[(25+39)])
 end,
 })
-local _lv004E=_lv0009:CreateButton({
-Name="\097\115\116\101\114\111\105\100\032\104\117\098\032\040\098\097\099\107\117\112\041",
+local IIlIOI=IIII1I:CreateButton({
+Name=IIIIIO[(66-1)],
 Callback=function()
-loadstring(game:HttpGet("\104\116\116\112\115\058\047\047\114\097\119\046\103\105\116\104\117\098\117\115\101\114\099\111\110\116\101\110\116\046\099\111\109\047\107\110\052\103\104\116\045\115\101\099\117\114\105\116\121\047\072\101\120\097\104\117\098\115\099\114\105\112\116\115\047\114\101\102\115\047\104\101\097\100\115\047\109\097\105\110\047\097\115\116\101\114\111\105\100\046\108\117\097\046\116\120\116"))()
+loadstring(game:HttpGet(IIIIIO[(75-9)]))()
 end,
 })
-print("\107\110\052\103\104\116\032\104\117\098\032\108\111\097\100\101\100\033")
-print("\107\110\052\103\104\116\032\104\117\098\032\108\111\097\100\101\100\033") end
+print(IIIIIO[(76-9)])
+print(IIIIIO[(21+46)]) end
 _lvWrap()
