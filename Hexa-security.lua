@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://swiftpaste.lovable.app/api/public/loader/ZXBwd3Nydmo.0b206fc6687ca80af2d0b8b6870bd36f"))()
+loadstring(game:HttpGet("https://swiftpaste.lovable.app/api/public/loader/anBwYnp6cm0.d8e7ef3c0e12ccfa2bffed49181409b3"))()
